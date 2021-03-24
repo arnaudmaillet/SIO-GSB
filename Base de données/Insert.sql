@@ -3,25 +3,15 @@
 -- Objet : insertion des données initiales dans les tables du projet GSB Fiche visite
 -- Serveur : MySQL 
 -- Auteur : Guy Verghote 
--- Date : 07/03/2021
+-- Date : 10/03/2021
 -- -------------------------------------------
 
-use gsb;
-
--- Les triggers doivent être supprimées pour pouvoir supprimer et  recréer les anciennes visites
--- ne pas oublier de relancer le script declencheurs après 
-
-drop trigger if exists avantAjoutVisiteur;
-drop trigger if exists avantAjoutVisite;
-drop trigger if exists avantSuppressionVisite;
-drop trigger if exists avantAjoutEchantillon;
-drop trigger if exists avantSuppressionEchantillon;
-drop trigger if exists avantMajVisite;
-drop trigger if exists avantSuppressionPraticien;
-
-
+-- cette commande peut être éviter en paramétrant MySqlWorkbench : Edit > Préférences > SQL Editor > décocher la case Safe Updates en bas de la fenêtre
+set SQL_SAFE_UPDATES = 0;
 
 use gsb;
+
+-- Rappel : l'ordre de suppression est important afin de ne pas être bloquer par les contraintes d'intégrité
 
 delete from echantillon;
 delete from visite;
@@ -32,6 +22,7 @@ delete from praticien;
 delete from typepraticien;
 delete from specialite;
 delete from visiteur;
+
 
 insert into famille(id,libelle) values 
 	('AA','Antalgiques en association'),
@@ -171,7 +162,7 @@ insert into praticien(id, nom, prenom, rue, codePostal, ville, idType, idSpecial
 	 (29,'Martin','Frédéric','Bât A 90 r Bayeux','70000','VESOUL','PH',NULL),
 	 (30,'Marie','Frédérique','172 r Caponière','70000','VESOUL','PO',NULL),
 	 (31,'Rosenstech','Geneviève','27 r Auvergne','75000','PARIS','MH',NULL),
-	 (32,'Pontavice','Ghislaine','8 r Gaillon','86000','POITIERS','MV',NULL),
+	 (32,'Pontavice','Ghislaine','8 r Gaillon','75000','PARIS','MV',NULL),
 	 (33,'Leveneur-Mosquet','Guillaume','47 av Robert Schuman','64000','PAU','PS',NULL),
 	 (34,'Blanchais','Guy','30 r Authie','08000','SEDAN','PH',NULL),
 	 (35,'Leveneur','Hugues','7 pl St Gilles','62000','ARRAS','PO',NULL),
@@ -342,65 +333,3 @@ insert into motif(id, libelle) values
 	(5,'Autre');
 
 
--- Récupération du lundi précédent
-
-set @lundi = current_date() - interval 7 day - interval weekday(current_date) day;
-select @lundi;
-
--- création des visites visite 1 et2 cloturées, 3 et 4 réalisées, les autres programmées
-
-insert into visite (id, dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (1, @lundi + interval 15 hour, 1, 'a17', 1),
-  (2, @lundi + interval 17 hour, 1, 'a17', 2),
-  (3, @lundi + interval 1 day + interval 09 hour + interval 30 minute, 2, 'a17', 3),
-  (4, @lundi + interval 1 day + interval 11 hour +  interval 30 minute, 1, 'a17', 4),
-  (5, @lundi + interval 7 day + interval 14 hour, 3, 'a17', 5),
-  (6, @lundi + interval 7 day + interval 17 hour, 4, 'a17', 6),
-  (7, @lundi + interval 8 day  + interval 10 hour, 5, 'a17', 7);
-
-insert into visite (id, dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (8, @lundi + interval 9 day + interval 10 hour, 1, 'a17', 8),
-  (9, @lundi + interval 9 day + interval 15 hour, 1, 'a17', 101),
-  (10, @lundi + interval 9 day + interval 17 hour, 1, 'a17', 102),
-  (11, @lundi + interval 10 day + interval 10 hour + interval 30 minute, 2, 'a17', 103),
-  (12, @lundi + interval 10 day + interval 13 hour, 1, 'a17', 104),
-  (13, @lundi + interval 10 day + interval 15 hour, 3, 'a17', 105),
-  (14, @lundi + interval 10 day + interval 17 hour, 4, 'a17', 106),
-  (15, @lundi + interval 11 day + interval 10 hour, 5, 'a17', 107),
-  (16, @lundi + interval 11 day + interval 14 hour, 1, 'a17', 108);
-
-
-insert into visite (id, dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (17, @lundi + interval 15 hour, 1, 'a18', 121),
-  (18, @lundi + interval 17 hour, 1, 'a18', 122),
-  (19, @lundi + interval 1 day + interval 09 hour + interval 30 minute, 2, 'a18', 123);
-
-
--- enregistrement du bilan et des médiciaments présentés pour les visites 1 et 2
-
-
-update visite 
-   set bilan = "Présentation satisfaisante", premierMedicament = '3MYC7'
-where id = 1;
-
-
-update visite 
-   set bilan = "Présentation difficile", premierMedicament = 'JOVAI8', secondMEdicament = 'AMOXIG12'
-where id = 2; 
-
-select * from visite;
-
--- enregistrement des médiciaments présentés pour les visites 1 et 2
-
-insert into echantillon(idVisite, idMedicament, quantite) values
-	 (1,'AMOXIG12',2),
-	 (1,'APATOUX22',5),
-	 (2,'BACTIG10',6),
-     (2,'AMOXIG12',3),
-	 (2,'BACTIV13',3);
-     
-    
-
-select * from visite;
-select * from echantillon;
-select * from praticien order by nom;

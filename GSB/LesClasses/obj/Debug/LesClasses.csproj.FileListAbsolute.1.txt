@@ -1,0 +1,64 @@
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\bin\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\bin\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\obj\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\obj\Debug\LesClasses.pdb
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\bin\Debug\LesClasses.dll
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\bin\Debug\LesClasses.pdb
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\obj\Debug\LesClasses.dll
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\Solution 1\LesClasses\obj\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\bin\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\bin\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\obj\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\obj\Debug\LesClasses.pdb
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\bin\Debug\LesClasses.dll
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\bin\Debug\LesClasses.pdb
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\obj\Debug\LesClasses.dll
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version 1\LesClasses\obj\Debug\LesClasses.pdb
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.dll
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.pdb
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.dll
+K:\Enseignement\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+D:\20 Développement C# - Correction\GSB - version finale\LesClasses\bin\Debug\LesClasses.dll
+D:\20 Développement C# - Correction\GSB - version finale\LesClasses\bin\Debug\LesClasses.pdb
+D:\20 Développement C# - Correction\GSB - version finale\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+D:\20 Développement C# - Correction\GSB - version finale\LesClasses\obj\Debug\LesClasses.dll
+D:\20 Développement C# - Correction\GSB - version finale\LesClasses\obj\Debug\LesClasses.pdb
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.dll
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.pdb
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.csprojAssemblyReference.cache
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.dll
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\LesClasses\bin\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.csprojAssemblyReference.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\LesClasses\obj\Debug\LesClasses.pdb
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\bin\Debug\LesClasses.dll
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\bin\Debug\LesClasses.pdb
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.csprojResolveAssemblyReference.cache
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.dll
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\bin\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\bin\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.csprojAssemblyReference.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.pdb
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\bin\Debug\LesClasses.dll
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\bin\Debug\LesClasses.pdb
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.csprojAssemblyReference.cache
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.dll
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\LesClasses\obj\Debug\LesClasses.pdb

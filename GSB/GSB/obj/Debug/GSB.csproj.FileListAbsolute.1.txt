@@ -1,0 +1,172 @@
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.exe.config
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.exe
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\LesClasses.dll
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\LesClasses.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csprojResolveAssemblyReference.cache
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmBase.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMedicament.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmSaisieVisite.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmStock.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmVoirVisite.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.GenerateResource.Cache
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.exe
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.pdb
+D:\10 Classe\Slam 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\20 Développement C#\GSB - version finale\GSB\bin\Debug\GSB.exe.config
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.exe
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.pdb
+D:\20 Développement C#\GSB - version finale\GSB\bin\Debug\GSB.exe
+D:\20 Développement C#\GSB - version finale\GSB\bin\Debug\GSB.pdb
+D:\20 Développement C#\GSB - version finale\GSB\bin\Debug\LesClasses.dll
+D:\20 Développement C#\GSB - version finale\GSB\bin\Debug\LesClasses.pdb
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.csprojResolveAssemblyReference.cache
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmBase.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMedicament.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmSaisieVisite.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmStock.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.FrmVoirVisite.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\20 Développement C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.GenerateResource.Cache
+D:\20 Développement C# - Correction\GSB - version finale\GSB\bin\Debug\GSB.exe.config
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.exe
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.pdb
+K:\Enseignement\20 Développement C# - Correction\GSB - version finale\GSB\bin\Debug\GSB.exe.config
+K:\Enseignement\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.exe
+K:\Enseignement\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.pdb
+D:\20 Développement C# - Correction\GSB - version finale\GSB\bin\Debug\GSB.exe
+D:\20 Développement C# - Correction\GSB - version finale\GSB\bin\Debug\GSB.pdb
+D:\20 Développement C# - Correction\GSB - version finale\GSB\bin\Debug\LesClasses.dll
+D:\20 Développement C# - Correction\GSB - version finale\GSB\bin\Debug\LesClasses.pdb
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.csprojResolveAssemblyReference.cache
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmBase.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmMedicament.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmSaisieVisite.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmStock.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.FrmVoirVisite.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\20 Développement C# - Correction\GSB - version finale\GSB\obj\Debug\GSB.csproj.GenerateResource.Cache
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.exe.config
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.exe
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.pdb
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\LesClasses.dll
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\LesClasses.pdb
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csprojAssemblyReference.cache
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmBase.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMedicament.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmSaisieVisite.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmStock.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmVoirVisite.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.GenerateResource.cache
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.CoreCompileInputs.cache
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.CopyComplete
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.exe
+D:\16 Enseignement\Classe\SLAM 2017\PPE\02 PPE GSB Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.exe.config
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.exe
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\bin\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csprojAssemblyReference.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmBase.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.GenerateResource.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.CoreCompileInputs.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.csproj.CopyComplete
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.exe
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmBilan.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmAjout.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmConsultation.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmModification.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - version finale\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.csprojAssemblyReference.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmBase.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmBilan.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmAjout.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmConsultation.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.FrmModification.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.csproj.GenerateResource.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.csproj.CoreCompileInputs.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.exe
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\bin\Debug\GSB.exe.config
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\bin\Debug\GSB.exe
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\bin\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\bin\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\bin\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - existant\GSB\obj\Debug\GSB.csproj.CopyComplete
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csprojAssemblyReference.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmBase.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmConnexion.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmBilan.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmAjout.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmConsultation.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmImpressionRendezVous.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmMenu.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmModification.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.Properties.Resources.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.GenerateResource.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.CoreCompileInputs.cache
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.exe
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.exe.config
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.exe
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\LesClasses.dll
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\LesClasses.pdb
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.CopyComplete
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.exe.config
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.exe
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.pdb
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csprojResolveAssemblyReference.cache
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmBase.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmConnexion.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmBilan.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmAjout.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmConsultation.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmImpressionRendezVous.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmMenu.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmModification.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.Properties.Resources.resources
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.GenerateResource.Cache
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.exe
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.pdb
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\LesClasses.dll
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\LesClasses.pdb
+K:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmMedicament.resources
+D:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmMedicament.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.exe.config
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.exe
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\GSB.pdb
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\LesClasses.dll
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\bin\Debug\LesClasses.pdb
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csprojAssemblyReference.cache
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmBase.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmConnexion.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmBilan.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmAjout.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmConsultation.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmImpressionRendezVous.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmMedicament.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmMenu.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.FrmModification.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.Properties.Resources.resources
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.GenerateResource.cache
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.CoreCompileInputs.cache
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.csproj.CopyComplete
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.exe
+L:\10 Classe\SLAM 2019\PPE\Semestre 2\Correction C#\GSB - correction\GSB\obj\Debug\GSB.pdb

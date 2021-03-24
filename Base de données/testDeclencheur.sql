@@ -3,50 +3,78 @@
 -- Objet : test des déclencheurs du rojet GSB Fiche visite
 -- Serveur : MySQL Server 
 -- Auteur : Guy Verghote 
--- Date : 10/03/2021
+-- Date : 11/03/2021
 -- -------------------------------------------
 
 use gsb;
 
-select * from visite;
+-- ------------------------------------------------------------------------
+-- test l'ajout d'une visiteur
+-- ------------------------------------------------------------------------
+
+-- insertion d'un visiteur sur la Somme
+-- réponse : Error Code: 1644. Un visiteur en activité gère déjà ce département
+
+insert into visiteur(id, nom, prenom, rue, codePostal, ville, dateEmbauche) values
+	 ('a01','Dupont','Pierre','1 rue lavallière','35000','RENNES', current_date());
+     
+     
+-- insertion d'un visiteur sur de département 03 l'allier : pas de visiteur dans ce département
+-- réponse acceptée
+insert into visiteur(id, nom, prenom, rue, codePostal, ville, dateEmbauche) values
+	 ('a02','Dupont','Paul','1 boulevard Mitterand','03200','Vichy', current_date());
+
+
+-- départ du visiteur b13 sur le département 35 d'Ille-et-Vilaine
+
+update visiteur
+  set dateDepart = current_date() 
+where id = 'b16';
+
+-- Arrivée du visiteur a01 sur ce département
+-- réponse : acceptée
+
+insert into visiteur(id, nom, prenom, rue, codePostal, ville, dateEmbauche) values
+	 ('a01','Dupont','Pierre','1 rue lavallière','35000','RENNES', current_date());
+
 
 -- ------------------------------------------------------------------------
--- test de la mise à jour d'une visite
+-- test l'ajout d'une visite
 -- ------------------------------------------------------------------------
 
 -- l'ajout d'une visite dans moins d'une heure : ce test ne peut être lancé qu'entre 7h et 18 heures
--- réponse: Error Code: 1644. #Une visite doit être programmée à l'avance, pas le jour même
+-- réponse: Error Code: 1644. # Error Code: 1644. Il n'est pas possible de programmer un rendez-vous dans moins d'une heure
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (now() + interval 1 hour, 1, 'a17', 1);
+  (now() + interval 1 hour - interval 1 minute, 1, 'e39', 13);
 
 -- l'ajout d'une visite dans plus de deux mois
--- réponse: Error Code: 1644. #Une visite ne peut être programmé plus de 2 mois à l'avance
+-- réponse: Error Code: 1644. #Une visite ne peut être programmée plus de 2 mois à l'avance
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 2 month + interval 1 day + interval 15 hour, 1, 'a17', 1); 
+  (curdate() + interval 2 month + interval 1 day + interval 15 hour, 1, 'e39', 13); 
 
 -- l'ajout d'une visite en renseignant les médicaments
--- réponse: Error Code: 1644. #Les médicaments présentés ne peuvent être renseignés lors de la création de La visite
+-- réponse: Error Code: 1644. le bilan et les médicaments présentés ne peuvent être renseignés lors de la programmation d'une visite
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien, premierMedicament, secondMEdicament) values 
-  (curdate() + interval 1 day + interval 15 hour, 1, 'a17', 1, 'ADIMOL9', 'DEPRIL9'); 
+  (curdate() + interval 1 day + interval 15 hour, 1, 'e39', 13, 'ADIMOL9', 'DEPRIL9'); 
 
 -- l'ajout d'une visite en renseignant les médicaments
--- réponse: Error Code: 1644. #Les médicaments présentées ne peuvent être renseignés lors de la création de La visite
+-- réponse: Error Code: 1644. le bilan et les médicaments présentés ne peuvent être renseignés lors de la programmation d'une visite
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien, premierMedicament) values 
-  (curdate() + interval 1 day+ interval 15 hour, 1, 'a17', 1, 'ADIMOL9'); 
+  (curdate() + interval 1 day+ interval 15 hour, 1, 'e39', 13, 'ADIMOL9'); 
 
 -- l'ajout d'une visite en renseignant les médicaments
--- réponse: Error Code: 1644. #Les médicaments présentées ne peuvent être renseignés lors de la création de La visite
+-- réponse: Error Code: 1644. le bilan et les médicaments présentés ne peuvent être renseignés lors de la programmation d'une visite
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien, secondMedicament) values 
-  (curdate() + interval 1 day+ interval 15 hour, 1, 'a17', 1, 'ADIMOL9'); 
+  (curdate() + interval 1 day+ interval 15 hour, 1, 'e39', 13, 'ADIMOL9'); 
 
   -- l'ajout d'une visite en renseignant le bilan
 -- réponse: Error Code: 1644. #Le bilan ne peut être renseigné lors de la programmation d'une visite
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien, bilan) values 
-  (curdate() + interval 1 day+ interval 15 hour, 1, 'a17', 1, 'Le praticien est convaincu' ); 
+  (curdate() + interval 1 day+ interval 15 hour, 1, 'e39', 13, 'Le praticien est convaincu' ); 
 
 
 -- ajout d'une visite un dimanche 
@@ -54,55 +82,55 @@ insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien, bilan) values
 -- réponse : Error Code: 1644. #Une visite ne peut pas se dérouler un dimanche
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 13 day - interval WeekDay(curdate()) day + interval 9 hour, 1 , 'a17', 1);
+  (curdate() + interval 13 day - interval WeekDay(curdate()) day + interval 9 hour, 1 , 'e39', 13);
   
 -- ajout d'une visite après 19 heures
 -- réponse : Error Code: 1644. #Une visite doit se situer entre 8 et 19 heures
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 19 hour + interval 15 minute, 1 , 'a17', 1);
+  (curdate() + interval 1 day + interval 19 hour + interval 15 minute, 1 , 'e39', 13);
 
 -- ajout d'une visite avant 8 heures
 -- reponse : Error Code: 1644. #Une visite doit se situer entre 8 et 19 heures
 
  insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 7 hour + interval 45 minute, 1 , 'a17', 1); 
+  (curdate() + interval 1 day + interval 7 hour + interval 45 minute, 1 , 'e39', 13); 
   
  
 -- ajout d'un visite avec un écart de moins de deux heures
 -- réponse : acceptée
 
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 15 hour, 1, 'a17', 1); 
+  (curdate() + interval 1 day + interval 15 hour, 1, 'e39', 13); 
 
 -- réponse : Error Code: 1644. #Il faut au moins deux heures d'écart entre deux visites
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 13 hour + interval 1 minute, 1, 'a17', 2); 
+  (curdate() + interval 1 day + interval 13 hour + interval 1 minute, 1, 'e39', 31); 
 
 -- reponse : Error Code: 1644. #Il faut au moins deux heures d'écart entre deux visites
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 16 hour + interval 59 minute, 1, 'a17', 3); 
+  (curdate() + interval 1 day + interval 16 hour + interval 59 minute, 1, 'e39', 32); 
 
 -- accepté
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 17 hour + interval 15 minute, 1, 'a17', 2); 
+  (curdate() + interval 1 day + interval 17 hour + interval 15 minute, 1, 'e39', 31); 
 
 -- ajout d'un visite chez le même praticien
 -- réponse : Error Code: 1644. #Une visite sans bilan enregistré est déjà programmée avec ce praticien
 insert into visite (dateEtHeure, idMotif, idVisiteur, idPraticien) values 
-  (curdate() + interval 1 day + interval 8 hour, 1, 'a17', 3); 
+  (curdate() + interval 1 day + interval 8 hour, 1, 'e39', 32); 
 
 -- ------------------------------------------------------------------------
 -- test de la mise à jour d'une visite
 -- ------------------------------------------------------------------------
 
 -- effacer le bilan des visites
--- réponse : refusé Error Code: 1644. Le bilan ne peut être effacé
+-- réponse : refusé Error Code: 1644. Aucune modification n'est possible sur une visite cloturée 
 
 update visite set bilan = null;
 
 -- effacer le bilan et les médicaments sur toutes les visites
--- reponse :  pas possible si des échantillons ont été distribués  : Error Code: 1644. Le bilan et le premier médicament doivent être renseignés si des échantillons ont été distribué 
+-- reponse :  pas possible si des échantillons ont été distribués  : EError Code: 1644. Aucune modification n'est possible sur une visite cloturée 
 
 update visite set bilan = null, premierMedicament = null, secondMedicament = null;
 
@@ -110,28 +138,30 @@ update visite set bilan = null, premierMedicament = null, secondMedicament = nul
 -- test sur une visite programmée
 
 -- enregistrer le bilan sur une visite programmée 
--- reponse : Error Code: 1644. Une visite qui n'est pas encore réalisée ne peut être complétée 
+-- reponse : Error Code: 1644. La visite ne peut être cloturée car le premier médicament présentée n'est pas renseigné 
+
 
 update visite 
 	set bilan = 'test' 
 where id = 5;
 
 -- enregistrer le premier médicament sur une visite programmée 
--- reponse : Error Code: 1644. Une visite qui n'est pas encore réalisée ne peut être complétée 
+-- reponse : Error Code: 1644. La visite ne peut être cloturée car le bilan n'est pas renseigné 
+
 
 update visite 
-	set premierMEdicament = 'AMOXIG12' 
+	set premierMedicament = 'AMOXIG12' 
 where id = 5;
 
 -- enregistrer le premier médicament sur une visite programmée 
--- reponse : Error Code: 1644. Une visite qui n'est pas encore réalisée ne peut être complétée 
+-- reponse : Error Code: 1644. La visite ne peut être cloturée car le bilan n'est pas renseigné 
 
 update visite 
 	set secondMedicament = 'AMOXIG12' 
 where id = 5;
 
 -- ajouter des échantillons
--- réponse : Error Code: 1644. Une visite qui n'est pas encore réalisée ne peut contenir d'échantillon
+-- réponse : Error Code: 1644. La bilan de la visite doit être renseigné pour pouvoir ajouter des échantillons
 
 
 insert into echantillon(idVisite, idMedicament, quantite) values
@@ -165,11 +195,26 @@ update visite
 where id = 2;
 
 -- ajouter des échantillons
--- réponse : Error Code: 1644. La visite est déjà clôturée
+-- réponse : Aucun trigger ne l'interdit puisque cette visite est cloturée
 
 insert into echantillon(idVisite, idMedicament, quantite) values
-	 (2,'AMOXIG12',2),
-	 (2,'APATOUX22',5);
+ 	(2, 'URIEG6',1), 
+	 (2,'APATOUX22',5),
+     (2,'PARMOL16', 1),
+     (2,'PHYSOI8', 1),
+     (2,'PIRIZ8',1);
+
+select * from echantillon;
+ 
+-- ajouter des échantillons pour un nombre > 10
+-- refusé : Error Code: 1644. Il n'est pas possible de distribuer plus de 10 médicaments
+ 
+insert into echantillon(idVisite, idMedicament, quantite) values     
+	(2,'POMDI20',1),
+	(2, 'TROXT21',1),
+	(2, 'TXISOL22',1),
+	(2, 'INSXT5',1);
+
 
 -- supprimer les échantillons
 -- réponse : Error Code: 1644. La suppression d'echantillon n'est pas autorisé
