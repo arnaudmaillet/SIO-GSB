@@ -374,7 +374,7 @@ namespace GSB
             }
             cnx.Close();
             //message = string.Empty;
-            return false;
+            return true;
             
         }
 
