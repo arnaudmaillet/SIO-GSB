@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GSB
 {
-    public partial class FrmAjoutPraticien : Form
+    public partial class FrmAjoutPraticien : FrmBase
     {
         public FrmAjoutPraticien()
         {
@@ -38,6 +38,7 @@ namespace GSB
 
         private void parametrerComposant()
         {
+            this.lblTitre.Text = "Ajout d'un Praticien";
             this.lblNom.Text = "Nom :";
             this.lblPrenom.Text = "Prenom :";
             this.lblRue.Text = "Rue :";
@@ -48,7 +49,7 @@ namespace GSB
             this.lblSpe.Text = "Specialite :";
 
             btnAjouter.BackColor = Color.Red;
-
+            btnAjouter.Text = "Ajouter";
         }
 
         #endregion

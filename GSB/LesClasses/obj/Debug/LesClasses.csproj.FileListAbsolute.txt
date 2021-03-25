@@ -88,7 +88,6 @@ D:\Support de cours\PPE\2021 Semestre 2 Gsb Fiche visite\PPE2\Application\GSB\Le
 D:\Support de cours\PPE\2021 Semestre 2 Gsb Fiche visite\PPE2\Application\GSB\LesClasses\bin\Debug\LesClasses.pdb
 K:\PPE 2\GSB\LesClasses\bin\Debug\LesClasses.dll
 K:\PPE 2\GSB\LesClasses\bin\Debug\LesClasses.pdb
-K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.csprojAssemblyReference.cache
 K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
 K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.dll
 K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.pdb

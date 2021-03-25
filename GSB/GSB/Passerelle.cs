@@ -328,7 +328,7 @@ namespace GSB
             catch (MySqlException e)
             {
                 message = e.Message;
-                message += e.ToString().Split('\n')[0];
+                //message += e.ToString().Split('\n')[0];
             }
             cnx.Close();
             return idVisite;
@@ -343,7 +343,39 @@ namespace GSB
         static public bool modifierRendezVous(int idVisite, DateTime uneDateEtHeure, out string message)
         {
             message = string.Empty;
+
+            // Ouverture de la connection a la base
+            cnx.Open();
+
+            // Chargement des objets Motifs
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = cnx,
+                CommandText = "modifierrRendezVous",
+                CommandType = CommandType.StoredProcedure
+            };
+            // Définition des parametres à transmettre
+            cmd.Parameters.AddWithValue("idVisite", Globale.LeVisiteur.Id);
+            cmd.Parameters.AddWithValue("uneDateEtHeure", uneDateEtHeure);
+
+            // Définition d'un parametre en sortie
+            cmd.Parameters.Add("idVisite", MySqlDbType.Int32);
+            cmd.Parameters["idVisite"].Direction = ParameterDirection.Output;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                idVisite = (Int32)cmd.Parameters["idVisite"].Value;
+            }
+            catch (MySqlException e)
+            {
+                message = e.Message;
+                //message += e.ToString().Split('\n')[0];
+            }
+            cnx.Close();
+            //message = string.Empty;
             return false;
+            
         }
 
         static public bool enregistrerBilan(Visite uneVisite, out string message)

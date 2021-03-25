@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GSB
 {
-    public partial class FrmModifierPraticien : Form
+    public partial class FrmModifierPraticien : FrmBase
     {
         public FrmModifierPraticien()
         {
@@ -29,6 +29,7 @@ namespace GSB
 
         private void parametrerComposant()
         {
+            this.lblTitre.Text = "Modifier un Praticien";
             this.lblcbx.Text = "Praticien à mettre à jour :";
             this.lblNom.Text = "Nom :";
             this.lblPrenom.Text = "Prenom :";
@@ -41,6 +42,9 @@ namespace GSB
 
             btnModifier.BackColor = Color.Green;
             btnSupprimer.BackColor = Color.Red;
+
+            btnModifier.Text = "Modifier";
+            btnSupprimer.Text = "Supprimer";
         }
 
         #endregion

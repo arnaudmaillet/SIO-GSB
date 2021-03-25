@@ -394,3 +394,7 @@ K:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmModifierRDV.resources
 E:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmModifierRDV.resources
 E:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmAjoutPraticien.resources
 E:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmModifierPraticien.resources
+E:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmPraticien.resources
+K:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmModifierPraticien.resources
+K:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmAjoutPraticien.resources
+K:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmPraticien.resources

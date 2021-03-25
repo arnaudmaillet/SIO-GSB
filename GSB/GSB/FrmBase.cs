@@ -131,8 +131,9 @@ namespace GSB
         // consulter la liste des praticiens gérés par le visiteur
         private void listePraticien_Click(object sender, EventArgs e)
         {
-           
-          
+            FrmPraticien unFrmPraticien = new FrmPraticien();
+            unFrmPraticien.Show();
+            surFermeture = 1;
             Close();
         }
 

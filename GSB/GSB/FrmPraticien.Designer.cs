@@ -1,6 +1,7 @@
-﻿namespace GSB
+﻿
+namespace GSB
 {
-    partial class FrmConsultation
+    partial class FrmPraticien
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvVisites = new System.Windows.Forms.DataGridView();
-            this.message = new System.Windows.Forms.Label();
             this.zoneFiche = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,59 +52,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVisites)).BeginInit();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvVisites = new System.Windows.Forms.DataGridView();
+            this.message = new System.Windows.Forms.Label();
             this.zoneFiche.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEchantillons)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVisites)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitre
             // 
-            this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitre.Size = new System.Drawing.Size(1677, 60);
-            // 
-            // panel2
-            // 
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.dgvVisites);
-            this.panel2.Controls.Add(this.message);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 88);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(611, 899);
-            this.panel2.TabIndex = 14;
-            // 
-            // dgvVisites
-            // 
-            this.dgvVisites.AllowUserToAddRows = false;
-            this.dgvVisites.AllowUserToDeleteRows = false;
-            this.dgvVisites.AllowUserToOrderColumns = true;
-            this.dgvVisites.AllowUserToResizeColumns = false;
-            this.dgvVisites.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvVisites.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvVisites.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVisites.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvVisites.Location = new System.Drawing.Point(21, 87);
-            this.dgvVisites.Margin = new System.Windows.Forms.Padding(267, 2, 3, 2);
-            this.dgvVisites.Name = "dgvVisites";
-            this.dgvVisites.RowHeadersWidth = 62;
-            this.dgvVisites.RowTemplate.Height = 24;
-            this.dgvVisites.Size = new System.Drawing.Size(587, 960);
-            this.dgvVisites.TabIndex = 17;
-            this.dgvVisites.SelectionChanged += new System.EventHandler(this.dgvVisites_SelectionChanged);
-            // 
-            // message
-            // 
-            this.message.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.message.Location = new System.Drawing.Point(16, 25);
-            this.message.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(516, 26);
-            this.message.TabIndex = 15;
-            this.message.Text = "Sélectionner la visite pour afficher le détail";
+            this.lblTitre.Size = new System.Drawing.Size(1651, 79);
             // 
             // zoneFiche
             // 
@@ -114,11 +73,11 @@
             this.zoneFiche.Controls.Add(this.panel4);
             this.zoneFiche.Controls.Add(this.panel3);
             this.zoneFiche.Dock = System.Windows.Forms.DockStyle.Left;
-            this.zoneFiche.Location = new System.Drawing.Point(611, 88);
-            this.zoneFiche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zoneFiche.Location = new System.Drawing.Point(611, 107);
+            this.zoneFiche.Margin = new System.Windows.Forms.Padding(4);
             this.zoneFiche.Name = "zoneFiche";
-            this.zoneFiche.Size = new System.Drawing.Size(1085, 899);
-            this.zoneFiche.TabIndex = 18;
+            this.zoneFiche.Size = new System.Drawing.Size(1085, 880);
+            this.zoneFiche.TabIndex = 20;
             // 
             // panel4
             // 
@@ -131,7 +90,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.lstMedicament);
             this.panel4.Location = new System.Drawing.Point(21, 327);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1024, 492);
             this.panel4.TabIndex = 112;
@@ -214,7 +173,7 @@
             this.lstMedicament.FormattingEnabled = true;
             this.lstMedicament.ItemHeight = 24;
             this.lstMedicament.Location = new System.Drawing.Point(23, 380);
-            this.lstMedicament.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstMedicament.Margin = new System.Windows.Forms.Padding(4);
             this.lstMedicament.Name = "lstMedicament";
             this.lstMedicament.Size = new System.Drawing.Size(299, 52);
             this.lstMedicament.TabIndex = 101;
@@ -235,7 +194,7 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(21, 87);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(977, 212);
             this.panel3.TabIndex = 102;
@@ -355,27 +314,67 @@
             this.label8.TabIndex = 97;
             this.label8.Text = "Email";
             // 
-            // FrmConsultation
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.dgvVisites);
+            this.panel2.Controls.Add(this.message);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 107);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(611, 880);
+            this.panel2.TabIndex = 19;
+            // 
+            // dgvVisites
+            // 
+            this.dgvVisites.AllowUserToAddRows = false;
+            this.dgvVisites.AllowUserToDeleteRows = false;
+            this.dgvVisites.AllowUserToOrderColumns = true;
+            this.dgvVisites.AllowUserToResizeColumns = false;
+            this.dgvVisites.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvVisites.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvVisites.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVisites.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvVisites.Location = new System.Drawing.Point(21, 87);
+            this.dgvVisites.Margin = new System.Windows.Forms.Padding(267, 2, 3, 2);
+            this.dgvVisites.Name = "dgvVisites";
+            this.dgvVisites.RowHeadersWidth = 62;
+            this.dgvVisites.RowTemplate.Height = 24;
+            this.dgvVisites.Size = new System.Drawing.Size(587, 960);
+            this.dgvVisites.TabIndex = 17;
+            // 
+            // message
+            // 
+            this.message.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.message.Location = new System.Drawing.Point(16, 25);
+            this.message.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.message.Name = "message";
+            this.message.Size = new System.Drawing.Size(516, 26);
+            this.message.TabIndex = 15;
+            this.message.Text = "Sélectionner la visite pour afficher le détail";
+            // 
+            // FrmPraticien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1677, 1055);
+            this.ClientSize = new System.Drawing.Size(1651, 1055);
             this.Controls.Add(this.zoneFiche);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FrmConsultation";
-            this.Load += new System.EventHandler(this.FrmConsultation_Load);
+            this.Name = "FrmPraticien";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmPraticien_Load);
             this.Controls.SetChildIndex(this.lblTitre, 0);
             this.Controls.SetChildIndex(this.panel2, 0);
             this.Controls.SetChildIndex(this.zoneFiche, 0);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVisites)).EndInit();
             this.zoneFiche.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEchantillons)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVisites)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,9 +382,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvVisites;
-        private System.Windows.Forms.Label message;
         private System.Windows.Forms.Panel zoneFiche;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label2;
@@ -409,5 +405,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dgvVisites;
+        private System.Windows.Forms.Label message;
     }
 }

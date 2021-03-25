@@ -184,13 +184,13 @@ namespace GSB
             #region paramètrage des colonnes
 
             // Largeur : à contrôler avec la largeur des colonnes si elle est définie
-            unDgv.Width = 700;
+            unDgv.Width = 800;
 
             // Dimensionner la hauteur du DataGridview en fonction du nombre de lignes
             // à faire ici si le composant n'est pas dynamique
 
             // Nombre de colonne sans compter les colonnes ajoutées par la méthode Add
-            unDgv.ColumnCount = 5;
+            unDgv.ColumnCount = 6;
 
             // faut-il ajuster automatiquement la taille des colonnes à leur contenu (commenter la ligne si non)
             // unDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -215,13 +215,19 @@ namespace GSB
 
             unDgv.Columns[3].HeaderText = "sur";
             unDgv.Columns[3].Name = "Lieu";
-            unDgv.Columns[3].Width = 200;
+            unDgv.Columns[3].Width = 170;
             unDgv.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
             unDgv.Columns[4].HeaderText = "chez";
             unDgv.Columns[4].Name = "Praticien";
-            unDgv.Columns[4].Width = 250;
+            unDgv.Columns[4].Width = 200;
             unDgv.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+            DataGridViewImageColumn uneColonne = new DataGridViewImageColumn();
+            uneColonne.Image = new Bitmap("supprimer.png");
+            unDgv.Columns.Add(uneColonne);
+            unDgv.Columns[5].Width = 30;
+            unDgv.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
             // faut-il désactiver le tri sur toutes les colonnes ? (commenter les lignes si non)
             for (int i = 0; i < unDgv.ColumnCount; i++)

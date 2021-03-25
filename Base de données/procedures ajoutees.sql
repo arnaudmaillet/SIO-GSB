@@ -37,8 +37,7 @@ delimiter $$
 create procedure modifierRendezVous (idVisite varchar(3), dateEtHeure datetime, out idVisite int)
 begin
 	update visite
-	set visite.dateEtHeure = dateEtHeure
-    set idVisite = (select @@identity);
+	set dateEtHeure = uneDateEtHeure;
 end
 $$
 
