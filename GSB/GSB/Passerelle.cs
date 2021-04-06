@@ -153,6 +153,19 @@ namespace GSB
             }
             curseur.Close();
 
+            // Chargement des objets ville
+            cmd.CommandText = "getLesVilles";
+            curseur = cmd.ExecuteReader();
+            while (curseur.Read())
+            {
+                string nom = curseur["nom"].ToString();
+                string codePostal = curseur["codePostal"].ToString();
+                // création de l'objet et ajout dans donnees
+                Ville uneVille = new Ville(nom, codePostal);
+                Globale.LesVilles.Add(uneVille);
+            }
+            curseur.Close();
+
 
             // Chargement des objets Specialite
             cmd.CommandText = "getLesSpecialites";
@@ -351,7 +364,7 @@ namespace GSB
             MySqlCommand cmd = new MySqlCommand()
             {
                 Connection = cnx,
-                CommandText = "modifierrRendezVous",
+                CommandText = "modifierRendezVous",
                 CommandType = CommandType.StoredProcedure
             };
             // Définition des parametres à transmettre
@@ -388,7 +401,40 @@ namespace GSB
         static public int ajouterPraticien(string nom, string prenom, string rue, string codePostal, string ville, string telephone, string email, string unType, string uneSpecialite, out string message)
         {
             message = string.Empty;
-            
+
+            // Ouverture de la connection a la base
+            cnx.Open();
+
+            // Chargement des objets Motifs
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = cnx,
+                CommandText = "ajouterPraticien",
+                CommandType = CommandType.StoredProcedure
+            };
+
+            // Définition des parametres à transmettre
+            cmd.Parameters.AddWithValue("nom", nom);
+            cmd.Parameters.AddWithValue("prenom", prenom);
+            cmd.Parameters.AddWithValue("rue", rue);
+            cmd.Parameters.AddWithValue("codePostal", codePostal);
+            cmd.Parameters.AddWithValue("ville", ville);
+            cmd.Parameters.AddWithValue("telephone", telephone);
+            cmd.Parameters.AddWithValue("email", email);
+            cmd.Parameters.AddWithValue("idType", unType);
+            cmd.Parameters.AddWithValue("idSpecialite", uneSpecialite);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                message = e.Message;
+                //message += e.ToString().Split('\n')[0];
+            }
+            cnx.Close();
+
             return 0;
         }
 

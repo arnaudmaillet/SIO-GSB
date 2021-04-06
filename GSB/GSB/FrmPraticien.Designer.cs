@@ -65,6 +65,7 @@ namespace GSB
             // 
             // lblTitre
             // 
+            this.lblTitre.Location = new System.Drawing.Point(0, 30);
             this.lblTitre.Size = new System.Drawing.Size(1651, 79);
             // 
             // zoneFiche
@@ -73,10 +74,10 @@ namespace GSB
             this.zoneFiche.Controls.Add(this.panel4);
             this.zoneFiche.Controls.Add(this.panel3);
             this.zoneFiche.Dock = System.Windows.Forms.DockStyle.Left;
-            this.zoneFiche.Location = new System.Drawing.Point(611, 107);
+            this.zoneFiche.Location = new System.Drawing.Point(611, 109);
             this.zoneFiche.Margin = new System.Windows.Forms.Padding(4);
             this.zoneFiche.Name = "zoneFiche";
-            this.zoneFiche.Size = new System.Drawing.Size(1085, 880);
+            this.zoneFiche.Size = new System.Drawing.Size(1085, 878);
             this.zoneFiche.TabIndex = 20;
             // 
             // panel4
@@ -320,10 +321,10 @@ namespace GSB
             this.panel2.Controls.Add(this.dgvVisites);
             this.panel2.Controls.Add(this.message);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 107);
+            this.panel2.Location = new System.Drawing.Point(0, 109);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(611, 880);
+            this.panel2.Size = new System.Drawing.Size(611, 878);
             this.panel2.TabIndex = 19;
             // 
             // dgvVisites

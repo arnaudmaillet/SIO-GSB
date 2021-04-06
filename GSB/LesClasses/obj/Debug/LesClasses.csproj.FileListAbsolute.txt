@@ -91,3 +91,8 @@ K:\PPE 2\GSB\LesClasses\bin\Debug\LesClasses.pdb
 K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
 K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.dll
 K:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.pdb
+I:\PPE 2\GSB\LesClasses\bin\Debug\LesClasses.dll
+I:\PPE 2\GSB\LesClasses\bin\Debug\LesClasses.pdb
+I:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.csproj.CoreCompileInputs.cache
+I:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.dll
+I:\PPE 2\GSB\LesClasses\obj\Debug\LesClasses.pdb
