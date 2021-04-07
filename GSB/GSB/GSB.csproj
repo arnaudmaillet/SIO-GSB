@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmEchantillon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEchantillon.Designer.cs">
+      <DependentUpon>FrmEchantillon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPraticien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,9 @@
     <Compile Include="Passerelle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmEchantillon.resx">
+      <DependentUpon>FrmEchantillon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmModifierPraticien.resx">
       <DependentUpon>FrmModifierPraticien.cs</DependentUpon>
     </EmbeddedResource>

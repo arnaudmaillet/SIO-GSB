@@ -123,8 +123,9 @@ namespace GSB
         // consulter l'ensemble des échantillons distribués par le visiteur connecté
         private void voirEchantillon_Click(object sender, EventArgs e)
         {
-          
-  
+            FrmEchantillon unFrmEchantillon = new FrmEchantillon();
+            unFrmEchantillon.Show();
+            surFermeture = 1;
             Close();
         }
 

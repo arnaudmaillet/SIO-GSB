@@ -53,19 +53,18 @@ namespace GSB
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dgvVisites = new System.Windows.Forms.DataGridView();
+            this.dgvPraticiens = new System.Windows.Forms.DataGridView();
             this.message = new System.Windows.Forms.Label();
             this.zoneFiche.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEchantillons)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVisites)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPraticiens)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitre
             // 
-            this.lblTitre.Location = new System.Drawing.Point(0, 30);
             this.lblTitre.Size = new System.Drawing.Size(1651, 79);
             // 
             // zoneFiche
@@ -74,10 +73,10 @@ namespace GSB
             this.zoneFiche.Controls.Add(this.panel4);
             this.zoneFiche.Controls.Add(this.panel3);
             this.zoneFiche.Dock = System.Windows.Forms.DockStyle.Left;
-            this.zoneFiche.Location = new System.Drawing.Point(611, 109);
+            this.zoneFiche.Location = new System.Drawing.Point(611, 107);
             this.zoneFiche.Margin = new System.Windows.Forms.Padding(4);
             this.zoneFiche.Name = "zoneFiche";
-            this.zoneFiche.Size = new System.Drawing.Size(1085, 878);
+            this.zoneFiche.Size = new System.Drawing.Size(1085, 880);
             this.zoneFiche.TabIndex = 20;
             // 
             // panel4
@@ -318,42 +317,44 @@ namespace GSB
             // panel2
             // 
             this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.dgvVisites);
+            this.panel2.Controls.Add(this.dgvPraticiens);
             this.panel2.Controls.Add(this.message);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 109);
+            this.panel2.Location = new System.Drawing.Point(0, 107);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(611, 878);
+            this.panel2.Size = new System.Drawing.Size(611, 880);
             this.panel2.TabIndex = 19;
             // 
-            // dgvVisites
+            // dgvPraticiens
             // 
-            this.dgvVisites.AllowUserToAddRows = false;
-            this.dgvVisites.AllowUserToDeleteRows = false;
-            this.dgvVisites.AllowUserToOrderColumns = true;
-            this.dgvVisites.AllowUserToResizeColumns = false;
-            this.dgvVisites.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvVisites.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvVisites.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVisites.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvVisites.Location = new System.Drawing.Point(21, 87);
-            this.dgvVisites.Margin = new System.Windows.Forms.Padding(267, 2, 3, 2);
-            this.dgvVisites.Name = "dgvVisites";
-            this.dgvVisites.RowHeadersWidth = 62;
-            this.dgvVisites.RowTemplate.Height = 24;
-            this.dgvVisites.Size = new System.Drawing.Size(587, 960);
-            this.dgvVisites.TabIndex = 17;
+            this.dgvPraticiens.AllowUserToAddRows = false;
+            this.dgvPraticiens.AllowUserToDeleteRows = false;
+            this.dgvPraticiens.AllowUserToOrderColumns = true;
+            this.dgvPraticiens.AllowUserToResizeColumns = false;
+            this.dgvPraticiens.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvPraticiens.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvPraticiens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPraticiens.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvPraticiens.Location = new System.Drawing.Point(21, 87);
+            this.dgvPraticiens.Margin = new System.Windows.Forms.Padding(267, 2, 3, 2);
+            this.dgvPraticiens.Name = "dgvPraticiens";
+            this.dgvPraticiens.RowHeadersWidth = 62;
+            this.dgvPraticiens.RowTemplate.Height = 24;
+            this.dgvPraticiens.Size = new System.Drawing.Size(587, 960);
+            this.dgvPraticiens.TabIndex = 17;
+            this.dgvPraticiens.SelectionChanged += new System.EventHandler(this.dgvPraticiens_SelectionChanged);
             // 
             // message
             // 
             this.message.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.message.Location = new System.Drawing.Point(16, 25);
+            this.message.Location = new System.Drawing.Point(16, 14);
             this.message.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(516, 26);
+            this.message.Size = new System.Drawing.Size(533, 60);
             this.message.TabIndex = 15;
-            this.message.Text = "Sélectionner la visite pour afficher le détail";
+            this.message.Text = "Sélectionner la visite pour afficher ses coordonnées et les informations concerna" +
+    "nt sa dernière visite";
             // 
             // FrmPraticien
             // 
@@ -375,7 +376,7 @@ namespace GSB
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvVisites)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPraticiens)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -407,7 +408,7 @@ namespace GSB
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dgvVisites;
+        private System.Windows.Forms.DataGridView dgvPraticiens;
         private System.Windows.Forms.Label message;
     }
 }

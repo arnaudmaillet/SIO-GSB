@@ -420,3 +420,4 @@ I:\PPE 2\GSB\GSB\bin\Debug\GSB.pdb
 I:\PPE 2\GSB\GSB\bin\Debug\LesClasses.dll
 I:\PPE 2\GSB\GSB\bin\Debug\LesClasses.pdb
 I:\PPE 2\GSB\GSB\obj\Debug\GSB.csproj.CopyComplete
+I:\PPE 2\GSB\GSB\obj\Debug\GSB.FrmEchantillon.resources

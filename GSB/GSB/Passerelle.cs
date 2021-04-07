@@ -368,7 +368,7 @@ namespace GSB
                 CommandType = CommandType.StoredProcedure
             };
             // Définition des parametres à transmettre
-            cmd.Parameters.AddWithValue("idVisite", Globale.LeVisiteur.Id);
+            cmd.Parameters.AddWithValue("idVisite", idVisite);
             cmd.Parameters.AddWithValue("uneDateEtHeure", uneDateEtHeure);
 
             // Définition d'un parametre en sortie

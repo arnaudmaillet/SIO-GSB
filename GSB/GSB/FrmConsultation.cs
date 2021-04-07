@@ -247,12 +247,12 @@ namespace GSB
         }
 
         // alimenter le datagridview à partir de la collection de visite du visiteur
-     
         private void remplirDgvVisites()
         {
             foreach (Visite uneVisite in Globale.LeVisiteur.getLesVisites())
                 dgvVisites.Rows.Add(
-                        uneVisite, uneVisite.DateEtHeure.ToShortDateString(),
+                        uneVisite, 
+                        uneVisite.DateEtHeure.ToShortDateString(),
                         uneVisite.DateEtHeure.ToShortTimeString(),
                         Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(uneVisite.LePraticien.Ville.ToLower())
                     ) ;

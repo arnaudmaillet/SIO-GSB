@@ -228,7 +228,7 @@ namespace GSB
             unDgv.Columns.Add(uneColonne);
             unDgv.Columns[5].Width = 30;
             unDgv.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
-
+            
             // faut-il désactiver le tri sur toutes les colonnes ? (commenter les lignes si non)
             for (int i = 0; i < unDgv.ColumnCount; i++)
                 unDgv.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
@@ -281,9 +281,8 @@ namespace GSB
             Passerelle.modifierRendezVous(unRDV.Id, this.dtpDate.Value , out string message);
 
             // Message en sortie
-            MessageBox.Show("Rendez-vous Modifié", "Modifié", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Rendez-vous Modifié");
             //MessageBox.Show(message, "Rendez-vous Modifié", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
 
 
             // Maj 
