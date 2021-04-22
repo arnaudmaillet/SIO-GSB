@@ -289,31 +289,28 @@ namespace GSB
             {
                 lblMotif.Text = lesVisites[0].LeMotif.Libelle;
                 lblBilan.Text = lesVisites[0].Bilan;
-            }
 
+                //vider la liste
+                lstMedicament.Items.Clear();
 
-            //vider la liste
-            lstMedicament.Items.Clear();
-
-            // alimentation des medicaments présentés
-            if (lesVisites[0].PremierMedicament != null)
-            {
-                lstMedicament.Items.Add(lesVisites[0].PremierMedicament.Nom);
-                if (lesVisites[0].SecondMedicament != null)
+                // alimentation des medicaments présentés
+                if (lesVisites[0].PremierMedicament != null)
                 {
-                    lstMedicament.Items.Add(lesVisites[0].SecondMedicament.Nom);
+                    lstMedicament.Items.Add(lesVisites[0].PremierMedicament.Nom);
+                    if (lesVisites[0].SecondMedicament != null)
+                    {
+                        lstMedicament.Items.Add(lesVisites[0].SecondMedicament.Nom);
+                    }
+                }
+
+                dgvEchantillons.Rows.Clear();
+                SortedDictionary<Medicament, int> lesEchantillons = lesVisites[0].getLesEchantillons();
+                foreach (Medicament unMedicament in lesVisites[0].getLesEchantillons().Keys)
+                {
+                    dgvEchantillons.Rows.Add(unMedicament.Nom, lesEchantillons[unMedicament]);
                 }
             }
-            
-            //dgvEchantillons.Rows.Clear();
-            //SortedDictionary<Medicament, int> lesEchantillons = uneVisite.getLesEchantillons();
-            //foreach (Medicament unMedicament in uneVisite.getLesEchantillons().Keys)
-            //{
-            //    dgvEchantillons.Rows.Add(unMedicament.Nom, lesEchantillons[unMedicament]);
-            //}
         }
         #endregion
-
-
     }
 }

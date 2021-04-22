@@ -50,134 +50,118 @@ namespace GSB
             this.lblRue = new System.Windows.Forms.Label();
             this.lblNom = new System.Windows.Forms.Label();
             this.lblcbx = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitre
             // 
-            this.lblTitre.Size = new System.Drawing.Size(954, 64);
+            this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitre.Size = new System.Drawing.Size(1272, 79);
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.cbxSpe);
-            this.panel1.Controls.Add(this.cbxType);
-            this.panel1.Controls.Add(this.tbxVille);
-            this.panel1.Controls.Add(this.tbxEmail);
-            this.panel1.Controls.Add(this.tbxTel);
-            this.panel1.Controls.Add(this.tbxPrenom);
-            this.panel1.Controls.Add(this.tbxRue);
-            this.panel1.Controls.Add(this.cbxNom);
-            this.panel1.Controls.Add(this.tbxNom);
-            this.panel1.Controls.Add(this.btnSupprimer);
-            this.panel1.Controls.Add(this.btnModifier);
-            this.panel1.Controls.Add(this.lblSpe);
-            this.panel1.Controls.Add(this.lblEmail);
-            this.panel1.Controls.Add(this.lblPrenom);
-            this.panel1.Controls.Add(this.lblType);
-            this.panel1.Controls.Add(this.lblTel);
-            this.panel1.Controls.Add(this.lblVille);
-            this.panel1.Controls.Add(this.lblRue);
-            this.panel1.Controls.Add(this.lblNom);
-            this.panel1.Controls.Add(this.lblcbx);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(954, 749);
+            this.panel1.Size = new System.Drawing.Size(1272, 923);
             this.panel1.TabIndex = 0;
             // 
             // cbxSpe
             // 
             this.cbxSpe.FormattingEnabled = true;
-            this.cbxSpe.Location = new System.Drawing.Point(439, 552);
-            this.cbxSpe.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxSpe.Location = new System.Drawing.Point(380, 530);
+            this.cbxSpe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxSpe.Name = "cbxSpe";
-            this.cbxSpe.Size = new System.Drawing.Size(314, 21);
+            this.cbxSpe.Size = new System.Drawing.Size(330, 24);
             this.cbxSpe.TabIndex = 21;
             // 
             // cbxType
             // 
             this.cbxType.FormattingEnabled = true;
-            this.cbxType.Location = new System.Drawing.Point(79, 552);
-            this.cbxType.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxType.Location = new System.Drawing.Point(23, 530);
+            this.cbxType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxType.Name = "cbxType";
-            this.cbxType.Size = new System.Drawing.Size(314, 21);
+            this.cbxType.Size = new System.Drawing.Size(291, 24);
             this.cbxType.TabIndex = 20;
             // 
             // tbxVille
             // 
-            this.tbxVille.Location = new System.Drawing.Point(183, 373);
-            this.tbxVille.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxVille.Location = new System.Drawing.Point(95, 315);
+            this.tbxVille.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxVille.Name = "tbxVille";
-            this.tbxVille.Size = new System.Drawing.Size(314, 20);
+            this.tbxVille.Size = new System.Drawing.Size(615, 22);
             this.tbxVille.TabIndex = 19;
             // 
             // tbxEmail
             // 
-            this.tbxEmail.Location = new System.Drawing.Point(439, 466);
-            this.tbxEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxEmail.Location = new System.Drawing.Point(380, 418);
+            this.tbxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxEmail.Name = "tbxEmail";
-            this.tbxEmail.Size = new System.Drawing.Size(314, 20);
+            this.tbxEmail.Size = new System.Drawing.Size(330, 22);
             this.tbxEmail.TabIndex = 17;
             // 
             // tbxTel
             // 
-            this.tbxTel.Location = new System.Drawing.Point(79, 466);
-            this.tbxTel.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxTel.Location = new System.Drawing.Point(23, 418);
+            this.tbxTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxTel.Name = "tbxTel";
-            this.tbxTel.Size = new System.Drawing.Size(314, 20);
+            this.tbxTel.Size = new System.Drawing.Size(291, 22);
             this.tbxTel.TabIndex = 15;
             // 
             // tbxPrenom
             // 
-            this.tbxPrenom.Location = new System.Drawing.Point(439, 227);
-            this.tbxPrenom.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxPrenom.Location = new System.Drawing.Point(380, 130);
+            this.tbxPrenom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPrenom.Name = "tbxPrenom";
-            this.tbxPrenom.Size = new System.Drawing.Size(314, 20);
+            this.tbxPrenom.Size = new System.Drawing.Size(330, 22);
             this.tbxPrenom.TabIndex = 14;
             // 
             // tbxRue
             // 
-            this.tbxRue.Location = new System.Drawing.Point(79, 313);
-            this.tbxRue.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxRue.Location = new System.Drawing.Point(23, 238);
+            this.tbxRue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxRue.Name = "tbxRue";
-            this.tbxRue.Size = new System.Drawing.Size(314, 20);
+            this.tbxRue.Size = new System.Drawing.Size(687, 22);
             this.tbxRue.TabIndex = 13;
             // 
             // cbxNom
             // 
             this.cbxNom.FormattingEnabled = true;
-            this.cbxNom.Location = new System.Drawing.Point(349, 140);
-            this.cbxNom.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxNom.Location = new System.Drawing.Point(320, 26);
+            this.cbxNom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbxNom.Name = "cbxNom";
-            this.cbxNom.Size = new System.Drawing.Size(246, 21);
+            this.cbxNom.Size = new System.Drawing.Size(390, 24);
             this.cbxNom.TabIndex = 12;
             // 
             // tbxNom
             // 
-            this.tbxNom.Location = new System.Drawing.Point(79, 227);
-            this.tbxNom.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxNom.Location = new System.Drawing.Point(23, 130);
+            this.tbxNom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxNom.Name = "tbxNom";
-            this.tbxNom.Size = new System.Drawing.Size(314, 20);
+            this.tbxNom.Size = new System.Drawing.Size(291, 22);
             this.tbxNom.TabIndex = 11;
             // 
             // btnSupprimer
             // 
-            this.btnSupprimer.Location = new System.Drawing.Point(440, 631);
-            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSupprimer.Location = new System.Drawing.Point(380, 603);
+            this.btnSupprimer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(313, 36);
+            this.btnSupprimer.Size = new System.Drawing.Size(330, 44);
             this.btnSupprimer.TabIndex = 10;
             this.btnSupprimer.Text = "button2";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             // 
             // btnModifier
             // 
-            this.btnModifier.Location = new System.Drawing.Point(80, 631);
-            this.btnModifier.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModifier.Location = new System.Drawing.Point(23, 603);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(313, 36);
+            this.btnModifier.Size = new System.Drawing.Size(327, 44);
             this.btnModifier.TabIndex = 9;
             this.btnModifier.Text = "button1";
             this.btnModifier.UseVisualStyleBackColor = true;
@@ -185,106 +169,127 @@ namespace GSB
             // lblSpe
             // 
             this.lblSpe.AutoSize = true;
-            this.lblSpe.Location = new System.Drawing.Point(437, 513);
-            this.lblSpe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSpe.Location = new System.Drawing.Point(377, 498);
             this.lblSpe.Name = "lblSpe";
-            this.lblSpe.Size = new System.Drawing.Size(35, 13);
+            this.lblSpe.Size = new System.Drawing.Size(46, 17);
             this.lblSpe.TabIndex = 8;
             this.lblSpe.Text = "label9";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(437, 432);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Location = new System.Drawing.Point(377, 390);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.Size = new System.Drawing.Size(46, 17);
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "label8";
             // 
             // lblPrenom
             // 
             this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(437, 191);
-            this.lblPrenom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrenom.Location = new System.Drawing.Point(377, 101);
             this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(35, 13);
+            this.lblPrenom.Size = new System.Drawing.Size(46, 17);
             this.lblPrenom.TabIndex = 6;
             this.lblPrenom.Text = "label7";
             // 
             // lblType
             // 
             this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(77, 513);
-            this.lblType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblType.Location = new System.Drawing.Point(20, 498);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(35, 13);
+            this.lblType.Size = new System.Drawing.Size(46, 17);
             this.lblType.TabIndex = 5;
             this.lblType.Text = "label6";
             // 
             // lblTel
             // 
             this.lblTel.AutoSize = true;
-            this.lblTel.Location = new System.Drawing.Point(77, 432);
-            this.lblTel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTel.Location = new System.Drawing.Point(20, 390);
             this.lblTel.Name = "lblTel";
-            this.lblTel.Size = new System.Drawing.Size(35, 13);
+            this.lblTel.Size = new System.Drawing.Size(46, 17);
             this.lblTel.TabIndex = 4;
             this.lblTel.Text = "label5";
             // 
             // lblVille
             // 
             this.lblVille.AutoSize = true;
-            this.lblVille.Location = new System.Drawing.Point(103, 373);
-            this.lblVille.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVille.Location = new System.Drawing.Point(20, 318);
             this.lblVille.Name = "lblVille";
-            this.lblVille.Size = new System.Drawing.Size(35, 13);
+            this.lblVille.Size = new System.Drawing.Size(46, 17);
             this.lblVille.TabIndex = 3;
             this.lblVille.Text = "label4";
             // 
             // lblRue
             // 
             this.lblRue.AutoSize = true;
-            this.lblRue.Location = new System.Drawing.Point(77, 275);
-            this.lblRue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRue.Location = new System.Drawing.Point(20, 208);
             this.lblRue.Name = "lblRue";
-            this.lblRue.Size = new System.Drawing.Size(35, 13);
+            this.lblRue.Size = new System.Drawing.Size(46, 17);
             this.lblRue.TabIndex = 2;
             this.lblRue.Text = "label3";
             // 
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(77, 191);
-            this.lblNom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNom.Location = new System.Drawing.Point(20, 101);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(35, 13);
+            this.lblNom.Size = new System.Drawing.Size(46, 17);
             this.lblNom.TabIndex = 1;
             this.lblNom.Text = "label2";
             // 
             // lblcbx
             // 
             this.lblcbx.AutoSize = true;
-            this.lblcbx.Location = new System.Drawing.Point(181, 140);
-            this.lblcbx.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblcbx.Location = new System.Drawing.Point(64, 29);
             this.lblcbx.Name = "lblcbx";
-            this.lblcbx.Size = new System.Drawing.Size(35, 13);
+            this.lblcbx.Size = new System.Drawing.Size(46, 17);
             this.lblcbx.TabIndex = 0;
             this.lblcbx.Text = "label1";
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblcbx);
+            this.panel2.Controls.Add(this.btnSupprimer);
+            this.panel2.Controls.Add(this.cbxType);
+            this.panel2.Controls.Add(this.btnModifier);
+            this.panel2.Controls.Add(this.cbxSpe);
+            this.panel2.Controls.Add(this.cbxNom);
+            this.panel2.Controls.Add(this.lblNom);
+            this.panel2.Controls.Add(this.lblType);
+            this.panel2.Controls.Add(this.tbxTel);
+            this.panel2.Controls.Add(this.tbxEmail);
+            this.panel2.Controls.Add(this.lblSpe);
+            this.panel2.Controls.Add(this.tbxVille);
+            this.panel2.Controls.Add(this.tbxNom);
+            this.panel2.Controls.Add(this.lblPrenom);
+            this.panel2.Controls.Add(this.tbxPrenom);
+            this.panel2.Controls.Add(this.lblTel);
+            this.panel2.Controls.Add(this.tbxRue);
+            this.panel2.Controls.Add(this.lblEmail);
+            this.panel2.Controls.Add(this.lblRue);
+            this.panel2.Controls.Add(this.lblVille);
+            this.panel2.Location = new System.Drawing.Point(261, 114);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(773, 672);
+            this.panel2.TabIndex = 22;
+            // 
             // FrmModifierPraticien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 828);
+            this.ClientSize = new System.Drawing.Size(1272, 1019);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FrmModifierPraticien";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmModifierPraticien_Load);
             this.Controls.SetChildIndex(this.panel1, 0);
             this.Controls.SetChildIndex(this.lblTitre, 0);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,5 +318,6 @@ namespace GSB
         private System.Windows.Forms.ComboBox cbxNom;
         private System.Windows.Forms.ComboBox cbxSpe;
         private System.Windows.Forms.ComboBox cbxType;
+        private System.Windows.Forms.Panel panel2;
     }
 }
