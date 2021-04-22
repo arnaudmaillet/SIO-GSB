@@ -80,11 +80,8 @@ namespace GSB
 
         private void ajout()
         {
-
-
-
             // ajout dans la base de données
-            if (tbxNom.Text == "" || tbxPrenom.Text == ""  || tbxEmail.Text == "" || tbxRue.Text == "" || tbxTel.Text == "" || tbxVille.Text == "" || cbxType is null)
+            if (tbxNom.Text == "" || tbxPrenom.Text == ""  || tbxEmail.Text == "" || tbxRue.Text == "" || tbxTel.Text == "" || tbxVille.Text == "" )
             {
                 //MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MessageBox.Show("Vous devez renseigner les champs Nom, Prenom, Rue, Ville, Telephone et Email !");
@@ -101,7 +98,7 @@ namespace GSB
                 Ville uneVille = Globale.LesVilles.Find(x => x.Nom == tbxVille.Text);
 
                 Passerelle.ajouterPraticien(tbxNom.Text, tbxPrenom.Text, tbxRue.Text, uneVille.Code, tbxVille.Text, tbxTel.Text, tbxEmail.Text, unType.Id, uneSpecialite.Id, out string message);
-                MessageBox.Show("Praticien ajouté");           
+                MessageBox.Show("Praticien ajouté");
             }
         }
 

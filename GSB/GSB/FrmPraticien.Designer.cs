@@ -31,6 +31,7 @@ namespace GSB
         {
             this.zoneFiche = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cbx1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvEchantillons = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@ namespace GSB
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.cbx1);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.dgvEchantillons);
             this.panel4.Controls.Add(this.label4);
@@ -94,6 +96,14 @@ namespace GSB
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1024, 492);
             this.panel4.TabIndex = 112;
+            // 
+            // cbx1
+            // 
+            this.cbx1.FormattingEnabled = true;
+            this.cbx1.Location = new System.Drawing.Point(23, 448);
+            this.cbx1.Name = "cbx1";
+            this.cbx1.Size = new System.Drawing.Size(298, 24);
+            this.cbx1.TabIndex = 113;
             // 
             // label2
             // 
@@ -410,5 +420,6 @@ namespace GSB
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dgvPraticiens;
         private System.Windows.Forms.Label message;
+        private System.Windows.Forms.ComboBox cbx1;
     }
 }

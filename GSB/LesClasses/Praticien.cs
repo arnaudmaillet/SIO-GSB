@@ -32,7 +32,7 @@ namespace lesClasses
 
 
         // Méthodes 
-        public override string getType()  { return "Praticien"; }
+        public override string getType()  { return Type.ToString(); }
 
 
 

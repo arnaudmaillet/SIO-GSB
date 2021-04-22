@@ -239,18 +239,31 @@ namespace GSB
         // alimenter le datagridview à partir de la collection de visite du visiteur
         private void remplirDgvPraticiens()
         {
-            
+
 
             foreach (Praticien unPraticien in Globale.LeVisiteur.getLesPraticiens())
             {
-                //Visite uneVisite = Globale.LeVisiteur.getLesVisites().Find(x => x.LePraticien = unPraticien);
-                dgvPraticiens.Rows.Add(
-                    unPraticien,
-                    unPraticien.NomPrenom,
-                    unPraticien.Ville
-                    //uneVisite.DateEtHeure
-                //Globale.LeVisiteur.getLaVisite(1).DateEtHeure
-                );
+
+                List<Visite> lesVisites = Globale.LeVisiteur.getLesVisites(unPraticien);
+
+                if (lesVisites.Count() == 0)
+                {
+                    dgvPraticiens.Rows.Add(
+                        unPraticien,
+                        unPraticien.NomPrenom,
+                        unPraticien.Ville,
+                        "Aucune visite pour le moment"
+                    ) ;
+                } 
+                else
+                {
+                    dgvPraticiens.Rows.Add(
+                        unPraticien,
+                        unPraticien.NomPrenom,
+                        unPraticien.Ville,
+                        lesVisites[0].DateEtHeure.Date.ToString("dddd dd MMMM yyyy")
+                    );
+                }     
             }  
         }
 
@@ -258,28 +271,39 @@ namespace GSB
         private void afficher()
         {
             Praticien unPraticien = (Praticien)dgvPraticiens.SelectedRows[0].Cells[0].Value;
+            List<Visite> lesVisites = Globale.LeVisiteur.getLesVisites(unPraticien);
+
+
             lblPraticien.Text = unPraticien.NomPrenom;
             lblEmail.Text = unPraticien.Email;
             lblRue.Text = unPraticien.Rue;
             lblTelephone.Text = unPraticien.Telephone;
-            //lblMotif.Text = uneVisite.LeMotif.Libelle;
             lblSpecialite.Text = unPraticien.Specialite is null ? null : unPraticien.Specialite.Libelle;
             lblType.Text = unPraticien.Type.Libelle;
-            //lblBilan.Text = uneVisite.Bilan;
+
+            if (lesVisites.Count() == 0)
+            {
+                lblMotif.Text = "Pas de visite pour le moment";
+                lblBilan.Text = "Pas de visite pour le moment";
+            } else
+            {
+                lblMotif.Text = lesVisites[0].LeMotif.Libelle;
+                lblBilan.Text = lesVisites[0].Bilan;
+            }
 
 
             //vider la liste
             lstMedicament.Items.Clear();
 
             // alimentation des medicaments présentés
-            //if (uneVisite.PremierMedicament != null)
-            //{
-            //    lstMedicament.Items.Add(uneVisite.PremierMedicament.Nom);
-            //    if (uneVisite.SecondMedicament != null)
-            //    {
-            //        lstMedicament.Items.Add(uneVisite.SecondMedicament.Nom);
-            //    }
-            //}
+            if (lesVisites[0].PremierMedicament != null)
+            {
+                lstMedicament.Items.Add(lesVisites[0].PremierMedicament.Nom);
+                if (lesVisites[0].SecondMedicament != null)
+                {
+                    lstMedicament.Items.Add(lesVisites[0].SecondMedicament.Nom);
+                }
+            }
             
             //dgvEchantillons.Rows.Clear();
             //SortedDictionary<Medicament, int> lesEchantillons = uneVisite.getLesEchantillons();

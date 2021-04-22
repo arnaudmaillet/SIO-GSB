@@ -57,6 +57,7 @@ namespace GSB
             this.Controls.Add(this.dgvEchantillons);
             this.Name = "FrmEchantillon";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmEchantillon_Load);
             this.Controls.SetChildIndex(this.lblTitre, 0);
             this.Controls.SetChildIndex(this.dgvEchantillons, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEchantillons)).EndInit();
