@@ -59,7 +59,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="lesClasses.Visite" BaseTypeListCollapsed="true">
-    <Position X="9.25" Y="4" Width="1.5" />
+    <Position X="9" Y="4" Width="2" />
     <TypeIdentifier>
       <HashCode>AAADCgAAAQAABAQAABAAAACQAEAAAAAQCAAIAAgABAA=</HashCode>
       <FileName>Visite.cs</FileName>

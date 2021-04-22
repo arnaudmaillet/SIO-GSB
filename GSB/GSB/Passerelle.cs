@@ -439,11 +439,45 @@ namespace GSB
         }
 
 
-        static public bool modifierPraticien(int id, string nom, string rue, string codePostal, string ville, string telephone, string email, out string message)
+        static public bool modifierPraticien(int id, string nom, string prenom, string rue, string codePostal, string ville, string telephone, string email, string unType, string uneSpecialite, out string message)
         {
             message = string.Empty;
-            
-            return false;
+
+            // Ouverture de la connection a la base
+            cnx.Open();
+
+            // Chargement des objets Motifs
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = cnx,
+                CommandText = "modifierPraticien",
+                CommandType = CommandType.StoredProcedure
+            };
+
+            // Définition des parametres à transmettre
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("nom", nom);
+            cmd.Parameters.AddWithValue("prenom", prenom);
+            cmd.Parameters.AddWithValue("rue", rue);
+            cmd.Parameters.AddWithValue("codePostal", codePostal);
+            cmd.Parameters.AddWithValue("ville", ville);
+            cmd.Parameters.AddWithValue("telephone", telephone);
+            cmd.Parameters.AddWithValue("email", email);
+            cmd.Parameters.AddWithValue("idType", unType);
+            cmd.Parameters.AddWithValue("idSpecialite", uneSpecialite);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                message = e.Message;
+                //message += e.ToString().Split('\n')[0];
+            }
+            cnx.Close();
+
+            return true;
         }
 
         static public bool supprimerPraticien(int id, out string message)

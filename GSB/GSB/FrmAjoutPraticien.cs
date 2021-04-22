@@ -83,12 +83,11 @@ namespace GSB
             // ajout dans la base de données
             if (tbxNom.Text == "" || tbxPrenom.Text == ""  || tbxEmail.Text == "" || tbxRue.Text == "" || tbxTel.Text == "" || tbxVille.Text == "" )
             {
-                //MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MessageBox.Show("Vous devez renseigner les champs Nom, Prenom, Rue, Ville, Telephone et Email !");
             }
             else
             {
-                // récupération d'une spécialité
+                // récupération de la spécialité
                 Specialite uneSpecialite = (Specialite)cbxSpe.SelectedItem;
 
                 // récupération du type

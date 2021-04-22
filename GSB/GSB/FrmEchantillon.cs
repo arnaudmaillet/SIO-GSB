@@ -143,10 +143,10 @@ namespace GSB
             #region paramètrage des colonnes
 
             // Largeur : à contrôler avec la largeur des colonnes si elle est définie
-            unDgv.Width = 550;
+            unDgv.Width = 800;
 
             // Nombre de colonne sans compter les colonnes ajoutées par la méthode Add
-            unDgv.ColumnCount = 4;
+            unDgv.ColumnCount = 6;
 
             // faut-il ajuster automatiquement la taille des colonnes à leur contenu (commenter la ligne si non)
             // unDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -175,12 +175,12 @@ namespace GSB
 
             unDgv.Columns[4].HeaderText = "Chez";
             unDgv.Columns[4].Name = "Praticien";
-            unDgv.Columns[4].Width = 150;
+            unDgv.Columns[4].Width = 100;
             unDgv.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
             unDgv.Columns[5].HeaderText = "Quantité";
             unDgv.Columns[5].Name = "Qte";
-            unDgv.Columns[5].Width = 50;
+            unDgv.Columns[5].Width = 100;
             unDgv.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
 
             // faut-il désactiver le tri sur toutes les colonnes ? (commenter les lignes si non)
@@ -196,17 +196,32 @@ namespace GSB
 
         private void remplirDgvEchantillon()
         {
-            //foreach (Medicament unMedicament in Globale.LeVisiteur.)
-            //{
-            //    //Visite uneVisite = Globale.LeVisiteur.getLesVisites().Find(x => x.LePraticien = unPraticien);
-            //    dgvPraticiens.Rows.Add(
-            //        unPraticien,
-            //        unPraticien.NomPrenom,
-            //        unPraticien.Ville
-            //    //uneVisite.DateEtHeure
-            //    //Globale.LeVisiteur.getLaVisite(1).DateEtHeure
-            //    );
-            //}
+
+            SortedDictionary<Medicament, int> lesMedicaments = new SortedDictionary<Medicament, int>();
+
+
+            foreach (Visite uneVisite in Globale.LeVisiteur.getLesVisites())
+            {
+                SortedDictionary<Medicament, int> lesEchantillons = uneVisite.getLesEchantillons();
+
+                foreach (KeyValuePair<Medicament, int> unMedicament in lesEchantillons)
+                {
+                    //Medicament leMedicament = lesMedicaments.Find(x => x.Nom == unMedicament.Nom);
+                    if (lesMedicaments.ContainsKey(unMedicament.Key))
+                    {
+
+                    } else
+                    {
+                        lesMedicaments.Add(unMedicament.Key, unMedicament.Value);
+                        dgvEchantillons.Rows.Add(
+                           unMedicament,
+                           unMedicament.Key,
+                           unMedicament.Value
+                        );
+                    }
+
+                }
+            }
             #endregion
         }
     }
