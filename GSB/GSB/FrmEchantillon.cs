@@ -196,31 +196,46 @@ namespace GSB
 
         private void remplirDgvEchantillon()
         {
-
+            // Dictionnaire lesMedicaments = [<Medicament, total> , ...] contenant tout les médicaments (clé unique) + le total par médicaments
             SortedDictionary<Medicament, int> lesMedicaments = new SortedDictionary<Medicament, int>();
+            Visite currentVisite = null;
 
 
             foreach (Visite uneVisite in Globale.LeVisiteur.getLesVisites())
             {
+                // Dictionnaire lesEchantillons contenant les echantillons pour une visite close
                 SortedDictionary<Medicament, int> lesEchantillons = uneVisite.getLesEchantillons();
+                currentVisite = uneVisite;
 
-                foreach (KeyValuePair<Medicament, int> unMedicament in lesEchantillons)
+                foreach (KeyValuePair<Medicament, int> unEchantillon in lesEchantillons)
                 {
-                    //Medicament leMedicament = lesMedicaments.Find(x => x.Nom == unMedicament.Nom);
-                    if (lesMedicaments.ContainsKey(unMedicament.Key))
+                    // Si unEchantillon est déjà présent dans lesMedicaments => on supprime la ligne de l'echantillon et on rajoute la clé en ajoutant la valeur (qte) avec la précendante sinon on ajoute la clé + valeur dans lesMedicaments
+                    if (lesMedicaments.ContainsKey(unEchantillon.Key))
                     {
-
+                        int lastValue = lesMedicaments[unEchantillon.Key];
+                        lesMedicaments.Remove(unEchantillon.Key);
+                        lesMedicaments.Add(unEchantillon.Key, unEchantillon.Value + lastValue);
                     } else
                     {
-                        lesMedicaments.Add(unMedicament.Key, unMedicament.Value);
-                        dgvEchantillons.Rows.Add(
-                           unMedicament,
-                           unMedicament.Key,
-                           unMedicament.Value
-                        );
+                        lesMedicaments.Add(unEchantillon.Key, unEchantillon.Value);
                     }
-
                 }
+            }
+
+            //foreach (KeyValuePair<Medicament, int> unMedicament in lesMedicaments)
+            //{
+            //    Visite lastVisite = lesMedicaments.ContainsKey(Globale.LeVisiteur.getLesVisites())
+            //}
+
+            foreach(KeyValuePair<Medicament, int> unMedicament in lesMedicaments)
+            { 
+                dgvEchantillons.Rows.Add(
+                    unMedicament,
+                    unMedicament.Key,
+                    unMedicament.Value,
+                    currentVisite.DateEtHeure,
+                    currentVisite.LePraticien.NomPrenom
+                );
             }
             #endregion
         }
