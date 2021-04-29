@@ -34,10 +34,11 @@ $$
 
 drop procedure if exists modifierRendezVous;
 delimiter $$
-create procedure modifierRendezVous (idVisite varchar(3), dateEtHeure datetime, out idVisite int)
+create procedure modifierRendezVous (dateEtHeure datetime, idVisite int)
 begin
 	update visite
-	set dateEtHeure = uneDateEtHeure;
+	set dateEtHeure = uneDateEtHeure
+	where idVisite = idVisite;
 end
 $$
 
@@ -55,7 +56,9 @@ $$
 
 drop procedure if exists ajouterPraticien;
 delimiter $$
-create procedure ajouterPraticien
+create procedure ajouterPraticien(nom varchar(25), prenom varchar(30), rue varchar(50), codePostal char(5), ville varchar(30), telephone char(14), email varchar(75), idType varchar(3), idSpecialite varchar(5))
+insert into praticien (nom, prenom, rue, codePostal, ville, telephone, email, idType, idSpecialite)
+values(nom, prenom, rue, codePostal, ville, telephone, email, idType, idSpecialite);
 
 $$
 
@@ -63,8 +66,12 @@ $$
 
 drop procedure if exists modifierPraticien;
 delimiter $$
-create procedure modifierPraticien
+create procedure modifierPraticien (id int, nom varchar(25), prenom varchar(30), rue varchar(50), codePostal char(5), ville varchar(30), telephone char(14), email varchar(75), idType varchar(3), idSpecialite varchar(5))
+update praticien
+set nom = nom, prenom = prenom, rue = rue, codePostal = codePostal, ville = ville, telephone = telephone, email = email, idType = idType, idSpecialite = idSpecialite
+where id = id;
 $$
+
 
 -- supprimer une praticien
 
@@ -102,8 +109,10 @@ $$
 
 drop procedure if exists getLesVilles;
 delimiter $$
-create procedure getLesVilles 
-
+create procedure getLesVilles()
+	select nom, codePostal
+	from ville 
+	order by nom;
 $$
 
 

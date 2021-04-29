@@ -196,16 +196,17 @@ namespace GSB
 
         private void remplirDgvEchantillon()
         {
-            // Dictionnaire lesMedicaments = [<Medicament, total> , ...] contenant tout les médicaments (clé unique) + le total par médicaments
+            // Dictionnaire lesMedicaments = [{Medicament, total} , ...] contenant tout les médicaments (clé unique) + le total par médicaments
             SortedDictionary<Medicament, int> lesMedicaments = new SortedDictionary<Medicament, int>();
-            Visite currentVisite = null;
+            SortedDictionary<Visite, List<Medicament>> lesVisites = new SortedDictionary<Visite, List<Medicament>>();
+            List<Medicament> array = new List<Medicament>();
 
-
-            foreach (Visite uneVisite in Globale.LeVisiteur.getLesVisites())
+            foreach (Visite uneVisite in Globale.LeVisiteur.getLesVisitesCloses())
             {
                 // Dictionnaire lesEchantillons contenant les echantillons pour une visite close
                 SortedDictionary<Medicament, int> lesEchantillons = uneVisite.getLesEchantillons();
-                currentVisite = uneVisite;
+                
+                lesVisites.Add(uneVisite, array);
 
                 foreach (KeyValuePair<Medicament, int> unEchantillon in lesEchantillons)
                 {
@@ -218,12 +219,17 @@ namespace GSB
                     } else
                     {
                         lesMedicaments.Add(unEchantillon.Key, unEchantillon.Value);
+                        array.Add(unEchantillon.Key);
                     }
                 }
             }
 
+            
+
             //foreach (KeyValuePair<Medicament, int> unMedicament in lesMedicaments)
             //{
+            //    
+            //
             //    Visite lastVisite = lesMedicaments.ContainsKey(Globale.LeVisiteur.getLesVisites())
             //}
 
@@ -232,9 +238,9 @@ namespace GSB
                 dgvEchantillons.Rows.Add(
                     unMedicament,
                     unMedicament.Key,
-                    unMedicament.Value,
-                    currentVisite.DateEtHeure,
-                    currentVisite.LePraticien.NomPrenom
+                    unMedicament.Value
+                    //currentVisite.DateEtHeure,
+                    //currentVisite.LePraticien.NomPrenom
                 );
             }
             #endregion

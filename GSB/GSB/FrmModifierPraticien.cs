@@ -13,6 +13,8 @@ namespace GSB
 {
     public partial class FrmModifierPraticien : FrmBase
     {
+        private Praticien lePraticien;
+
         public FrmModifierPraticien()
         {
             InitializeComponent();
@@ -22,12 +24,18 @@ namespace GSB
         private void FrmModifierPraticien_Load(object sender, EventArgs e)
         {
             parametrerComposant();
+            remplirPraticien();
             afficher();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
             modifier();
+        }
+        private void cbxPraticien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lePraticien = (Praticien)cbxPraticien.SelectedItem;
+            remplirPraticien();
         }
 
         #endregion
@@ -82,6 +90,30 @@ namespace GSB
             tbxVille.AutoCompleteCustomSource = source;
         }
 
+        private void remplirPraticien()
+        {
+            if (lePraticien.Specialite == null)
+
+                cbxSpe.SelectedItem = null;
+            else
+                cbxSpe.SelectedItem = lePraticien.Specialite;
+
+            cbxType.SelectedItem = lePraticien.Type;
+
+            tbxNom.Text = lePraticien.Nom;
+
+            tbxPrenom.Text = lePraticien.Prenom;
+
+            tbxRue.Text = lePraticien.Rue;
+
+            tbxVille.Text = lePraticien.Ville;
+
+            tbxTel.Text = lePraticien.Telephone;
+
+            tbxEmail.Text = lePraticien.Email;
+
+        }
+
         private void modifier()
         {
             if (tbxNom.Text == "" || tbxPrenom.Text == "" || tbxEmail.Text == "" || tbxRue.Text == "" || tbxTel.Text == "" || tbxVille.Text == "")
@@ -101,10 +133,11 @@ namespace GSB
                 // récupération de la ville (pour le code postal)
                 Ville uneVille = Globale.LesVilles.Find(x => x.Nom == tbxVille.Text);
 
-                Passerelle.modifierPraticien(unPraticien.Id, tbxNom.Text, tbxPrenom.Text, tbxRue.Text, uneVille.Code, uneVille.Nom, tbxTel.Text, tbxEmail.Text, unType.Id, uneSpecialite.Id, out string message);
-                MessageBox.Show("Praticien modifié");
+                Passerelle.modifierPraticien(unPraticien.Id, tbxNom.Text, tbxPrenom.Text, tbxRue.Text, uneVille.Code, uneVille.Nom, tbxTel.Text, tbxEmail.Text, unType.Id, uneSpecialite, out string message);
+                //MessageBox.Show("Praticien modifié");
             }
         }
+
 
         #endregion
 

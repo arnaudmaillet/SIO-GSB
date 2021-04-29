@@ -439,7 +439,7 @@ namespace GSB
         }
 
 
-        static public bool modifierPraticien(int id, string nom, string prenom, string rue, string codePostal, string ville, string telephone, string email, string unType, string uneSpecialite, out string message)
+        static public bool modifierPraticien(int id, string nom, string prenom, string rue, string codePostal, string ville, string telephone, string email, string unType, Specialite uneSpecialite, out string message)
         {
             message = string.Empty;
 
@@ -464,7 +464,15 @@ namespace GSB
             cmd.Parameters.AddWithValue("telephone", telephone);
             cmd.Parameters.AddWithValue("email", email);
             cmd.Parameters.AddWithValue("idType", unType);
-            cmd.Parameters.AddWithValue("idSpecialite", uneSpecialite);
+
+            if (uneSpecialite == null)
+            {
+                cmd.Parameters.AddWithValue("idSpecialite", null);
+            } else
+            {
+                cmd.Parameters.AddWithValue("idSpecialite", uneSpecialite.Id);
+            }
+            
 
             try
             {
