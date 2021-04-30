@@ -353,7 +353,7 @@ namespace GSB
             return false;
         }
 
-        static public bool modifierRendezVous(int idVisite, DateTime uneDateEtHeure, out string message)
+        static public bool modifierRendezVous(int id, DateTime dateEtHeure, out string message)
         {
             message = string.Empty;
 
@@ -368,26 +368,23 @@ namespace GSB
                 CommandType = CommandType.StoredProcedure
             };
             // Définition des parametres à transmettre
-            cmd.Parameters.AddWithValue("idVisite", idVisite);
-            cmd.Parameters.AddWithValue("uneDateEtHeure", uneDateEtHeure);
-
-            // Définition d'un parametre en sortie
-            cmd.Parameters.Add("idVisite", MySqlDbType.Int32);
-            cmd.Parameters["idVisite"].Direction = ParameterDirection.Output;
+            cmd.Parameters.AddWithValue("id", id);
+            cmd.Parameters.AddWithValue("dateEtHeure", dateEtHeure);
 
             try
             {
                 cmd.ExecuteNonQuery();
-                idVisite = (Int32)cmd.Parameters["idVisite"].Value;
+                cnx.Close();
+                return true;
             }
             catch (MySqlException e)
             {
                 message = e.Message;
                 //message += e.ToString().Split('\n')[0];
+                cnx.Close();
+                return false;
             }
-            cnx.Close();
-            //message = string.Empty;
-            return true;
+            
         }
 
         static public bool enregistrerBilan(Visite uneVisite, out string message)

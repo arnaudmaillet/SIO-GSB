@@ -27,12 +27,14 @@ namespace GSB
         {
             parametrerComposant();
             remplirdgvRDV();
+            afficher();
         }
 
         //sur le clic du bouton ajouter
         private void btnModifier_Click(object sender, EventArgs e)
         {
             modifier();
+            remplirdgvRDV();
         }
 
         private void dgvrRDV_SelectionChanged(object sender, EventArgs e)
@@ -44,10 +46,10 @@ namespace GSB
         #region méthodes
         private void parametrerComposant()
         {
-            this.lblTitre.Text = "Modification des Rendez-vous";
-            this.lblDgvTitre.Text = "Selectionner la visite afin de modifier la date du rendez-vous";
-            this.lblAffichage.Text = "";
-            this.btnModifier.Text = "Modifier";
+            lblTitre.Text = "Modification des Rendez-vous";
+            lblDgvTitre.Text = "Selectionner la visite afin de modifier la date du rendez-vous";
+            lblAffichage.Text = "";
+            btnModifier.Text = "Modifier";
 
             #region paramétrage du composant dateTimePicker 
             // la prise de rendez vous s'effectue sur les deux mois à venir : propriétés MinDate et MaxDate
@@ -259,17 +261,22 @@ namespace GSB
 
             // adapter la hauteur du datagridView
             if (dgvRDV.Height > 800) dgvRDV.Height = 800;
-
-            // affichage
-            afficher();
         }
 
         // Afficher le rendez-vous sélectionnée dans le datagridview
 
         private void afficher()
         {
-            Visite unRDV = (Visite)dgvRDV.SelectedRows[0].Cells[0].Value;
-            lblAffichage.Text = "Le rendez-vous chez " + unRDV.LePraticien.Nom + " prévu initialement le " + unRDV.DateEtHeure + " est remi au ";
+            if (dgvRDV.SelectedRows.Count == 0)
+            {
+                lblAffichage.Text = "Veuillez selectionner un rendez-vous dans la liste de gauche";
+                btnModifier.Visible = false;
+            } else
+            {
+                Visite unRDV = (Visite)dgvRDV.SelectedRows[0].Cells[0].Value;
+                lblAffichage.Text = "Le rendez-vous chez " + unRDV.LePraticien.Nom + " prévu initialement le " + unRDV.DateEtHeure + " est remi au ";
+                btnModifier.Visible = true;
+            }
         }
 
         private void modifier()
@@ -278,16 +285,16 @@ namespace GSB
             Visite unRDV = (Visite)dgvRDV.SelectedRows[0].Cells[0].Value;
 
             // Requete Passerelle
-            Passerelle.modifierRendezVous(unRDV.Id, this.dtpDate.Value , out string message);
+            if (Passerelle.modifierRendezVous(unRDV.Id, dtpDate.Value, out string message) == true)
+            {
+                MessageBox.Show("Rendez-vous Modifié");
+            }
+            else 
+            {
+                MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            };
 
-            // Message en sortie
-            MessageBox.Show("Rendez-vous Modifié");
-            //MessageBox.Show(message, "Rendez-vous Modifié", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-            // Maj 
-            remplirdgvRDV();
-            modifierRendezVous.Enabled = true;
+            
         }
     }
     #endregion

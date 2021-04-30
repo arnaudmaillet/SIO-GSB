@@ -44,7 +44,8 @@
             // 
             // lblTitre
             // 
-            this.lblTitre.Size = new System.Drawing.Size(1135, 64);
+            this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitre.Size = new System.Drawing.Size(1513, 79);
             // 
             // panel2
             // 
@@ -55,9 +56,10 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.dgvRDV);
-            this.panel2.Location = new System.Drawing.Point(0, 88);
+            this.panel2.Location = new System.Drawing.Point(0, 108);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(703, 472);
+            this.panel2.Size = new System.Drawing.Size(937, 581);
             this.panel2.TabIndex = 13;
             // 
             // panel4
@@ -65,17 +67,19 @@
             this.panel4.Controls.Add(this.lblDgvTitre);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(701, 58);
+            this.panel4.Size = new System.Drawing.Size(935, 71);
             this.panel4.TabIndex = 2;
             // 
             // lblDgvTitre
             // 
             this.lblDgvTitre.AutoSize = true;
             this.lblDgvTitre.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDgvTitre.Location = new System.Drawing.Point(8, 20);
+            this.lblDgvTitre.Location = new System.Drawing.Point(11, 25);
+            this.lblDgvTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDgvTitre.Name = "lblDgvTitre";
-            this.lblDgvTitre.Size = new System.Drawing.Size(49, 18);
+            this.lblDgvTitre.Size = new System.Drawing.Size(62, 24);
             this.lblDgvTitre.TabIndex = 1;
             this.lblDgvTitre.Text = "label1";
             // 
@@ -84,9 +88,11 @@
             this.dgvRDV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvRDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRDV.Location = new System.Drawing.Point(2, 64);
+            this.dgvRDV.Location = new System.Drawing.Point(3, 79);
+            this.dgvRDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvRDV.Name = "dgvRDV";
-            this.dgvRDV.Size = new System.Drawing.Size(699, 403);
+            this.dgvRDV.RowHeadersWidth = 51;
+            this.dgvRDV.Size = new System.Drawing.Size(932, 496);
             this.dgvRDV.TabIndex = 0;
             this.dgvRDV.SelectionChanged += new System.EventHandler(this.dgvrRDV_SelectionChanged);
             // 
@@ -97,18 +103,20 @@
             this.panel3.Controls.Add(this.lblAffichage);
             this.panel3.Controls.Add(this.dtpDate);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(706, 88);
+            this.panel3.Location = new System.Drawing.Point(942, 107);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(429, 474);
+            this.panel3.Size = new System.Drawing.Size(571, 584);
             this.panel3.TabIndex = 14;
             // 
             // btnModifier
             // 
             this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnModifier.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifier.Location = new System.Drawing.Point(36, 134);
+            this.btnModifier.Location = new System.Drawing.Point(48, 165);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(146, 50);
+            this.btnModifier.Size = new System.Drawing.Size(195, 62);
             this.btnModifier.TabIndex = 2;
             this.btnModifier.Text = "button1";
             this.btnModifier.UseVisualStyleBackColor = false;
@@ -118,27 +126,30 @@
             // 
             this.lblAffichage.AutoSize = true;
             this.lblAffichage.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAffichage.Location = new System.Drawing.Point(33, 23);
+            this.lblAffichage.Location = new System.Drawing.Point(44, 28);
+            this.lblAffichage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAffichage.Name = "lblAffichage";
-            this.lblAffichage.Size = new System.Drawing.Size(49, 18);
+            this.lblAffichage.Size = new System.Drawing.Size(62, 24);
             this.lblAffichage.TabIndex = 1;
             this.lblAffichage.Text = "label1";
             // 
             // dtpDate
             // 
             this.dtpDate.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDate.Location = new System.Drawing.Point(36, 74);
+            this.dtpDate.Location = new System.Drawing.Point(48, 91);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(261, 26);
+            this.dtpDate.Size = new System.Drawing.Size(347, 30);
             this.dtpDate.TabIndex = 0;
             // 
             // FrmModifierRDV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 617);
+            this.ClientSize = new System.Drawing.Size(1513, 759);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "FrmModifierRDV";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmModifierRDV_Load);

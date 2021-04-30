@@ -34,11 +34,11 @@ $$
 
 drop procedure if exists modifierRendezVous;
 delimiter $$
-create procedure modifierRendezVous (dateEtHeure datetime, idVisite int)
+create procedure modifierRendezVous (id int, dateEtHeure datetime)
 begin
 	update visite
 	set dateEtHeure = uneDateEtHeure
-	where idVisite = idVisite;
+	where visite.id = id;
 end
 $$
 
