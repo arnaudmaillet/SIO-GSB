@@ -67,9 +67,17 @@ $$
 drop procedure if exists modifierPraticien;
 delimiter $$
 create procedure modifierPraticien (id int, nom varchar(25), prenom varchar(30), rue varchar(50), codePostal char(5), ville varchar(30), telephone char(14), email varchar(75), idType varchar(3), idSpecialite varchar(5))
-update praticien
-set nom = nom, prenom = prenom, rue = rue, codePostal = codePostal, ville = ville, telephone = telephone, email = email, idType = idType, idSpecialite = idSpecialite
-where id = id;
+begin
+	if idSpecialite is null then
+		update praticien
+		set nom = nom, prenom = prenom, rue = rue, codePostal = codePostal, ville = ville, telephone = telephone, email = email, idType = idType, idSpecialite = null
+		where praticien.id = id;
+	else
+    update praticien
+		set nom = nom, prenom = prenom, rue = rue, codePostal = codePostal, ville = ville, telephone = telephone, email = email, idType = idType, idSpecialite = idSpecialite
+		where praticien.id = id;
+	end if;
+end;
 $$
 
 
@@ -77,8 +85,11 @@ $$
 
 drop procedure if exists supprimerPraticien;
 delimiter $$
-create procedure supprimerPraticien
-	
+create procedure supprimerPraticien(id int)
+begin
+	delete from praticien
+    where praticien.id = id;
+end	
 $$
 
 

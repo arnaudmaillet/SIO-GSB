@@ -117,6 +117,7 @@ namespace GSB
             this.btnSupprimer.TabIndex = 10;
             this.btnSupprimer.Text = "button2";
             this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // cbxType
             // 

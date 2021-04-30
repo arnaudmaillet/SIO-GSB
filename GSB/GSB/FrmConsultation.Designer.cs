@@ -64,6 +64,7 @@
             // 
             // lblTitre
             // 
+            this.lblTitre.Location = new System.Drawing.Point(0, 30);
             this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitre.Size = new System.Drawing.Size(1677, 60);
             // 
@@ -73,10 +74,10 @@
             this.panel2.Controls.Add(this.dgvVisites);
             this.panel2.Controls.Add(this.message);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 88);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(0, 90);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(611, 899);
+            this.panel2.Size = new System.Drawing.Size(611, 897);
             this.panel2.TabIndex = 14;
             // 
             // dgvVisites
@@ -114,10 +115,10 @@
             this.zoneFiche.Controls.Add(this.panel4);
             this.zoneFiche.Controls.Add(this.panel3);
             this.zoneFiche.Dock = System.Windows.Forms.DockStyle.Left;
-            this.zoneFiche.Location = new System.Drawing.Point(611, 88);
-            this.zoneFiche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zoneFiche.Location = new System.Drawing.Point(611, 90);
+            this.zoneFiche.Margin = new System.Windows.Forms.Padding(4);
             this.zoneFiche.Name = "zoneFiche";
-            this.zoneFiche.Size = new System.Drawing.Size(1085, 899);
+            this.zoneFiche.Size = new System.Drawing.Size(1085, 897);
             this.zoneFiche.TabIndex = 18;
             // 
             // panel4
@@ -131,7 +132,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.lstMedicament);
             this.panel4.Location = new System.Drawing.Point(21, 327);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1024, 492);
             this.panel4.TabIndex = 112;
@@ -214,7 +215,7 @@
             this.lstMedicament.FormattingEnabled = true;
             this.lstMedicament.ItemHeight = 24;
             this.lstMedicament.Location = new System.Drawing.Point(23, 380);
-            this.lstMedicament.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstMedicament.Margin = new System.Windows.Forms.Padding(4);
             this.lstMedicament.Name = "lstMedicament";
             this.lstMedicament.Size = new System.Drawing.Size(299, 52);
             this.lstMedicament.TabIndex = 101;
@@ -235,7 +236,7 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Location = new System.Drawing.Point(21, 87);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(977, 212);
             this.panel3.TabIndex = 102;
@@ -362,7 +363,7 @@
             this.ClientSize = new System.Drawing.Size(1677, 1055);
             this.Controls.Add(this.zoneFiche);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmConsultation";
             this.Load += new System.EventHandler(this.FrmConsultation_Load);
             this.Controls.SetChildIndex(this.lblTitre, 0);

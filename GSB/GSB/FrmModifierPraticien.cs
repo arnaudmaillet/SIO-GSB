@@ -13,7 +13,9 @@ namespace GSB
 {
     public partial class FrmModifierPraticien : FrmBase
     {
+        // initialisation du praticien et des buttons.
         private Praticien lePraticien;
+        private MessageBoxButtons buttons;
 
         public FrmModifierPraticien()
         {
@@ -24,18 +26,23 @@ namespace GSB
         private void FrmModifierPraticien_Load(object sender, EventArgs e)
         {
             parametrerComposant();
-            remplirPraticien();
             afficher();
+            remplirPraticien();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
         {
-            modifier();
+            modifierPraticien();
         }
         private void cbxPraticien_SelectedIndexChanged(object sender, EventArgs e)
         {
             lePraticien = (Praticien)cbxPraticien.SelectedItem;
             remplirPraticien();
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            supprimerPraticien();
         }
 
         #endregion
@@ -60,7 +67,10 @@ namespace GSB
 
             btnModifier.Text = "Modifier";
             btnSupprimer.Text = "Supprimer";
+        }
 
+        private void afficher()
+        {
             // alimentation de la zone de liste déroulante contenant les praticiens
             cbxPraticien.DataSource = Globale.LeVisiteur.getLesPraticiens();
             cbxPraticien.DisplayMember = "libelle";
@@ -75,10 +85,7 @@ namespace GSB
             cbxType.DataSource = Globale.LesTypes;
             cbxType.DisplayMember = "Libelle";
             cbxType.DropDownStyle = ComboBoxStyle.DropDownList;
-        }
 
-        private void afficher()
-        {
             // recuperation des villes
             tbxVille.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             tbxVille.AutoCompleteSource = AutoCompleteSource.CustomSource;
@@ -114,16 +121,13 @@ namespace GSB
 
         }
 
-        private void modifier()
+        private void modifierPraticien()
         {
             if (tbxNom.Text == "" || tbxPrenom.Text == "" || tbxEmail.Text == "" || tbxRue.Text == "" || tbxTel.Text == "" || tbxVille.Text == "")
             {
                 MessageBox.Show("Vous devez renseigner les champs Nom, Prenom, Rue, Ville, Telephone et Email !");
             } else
             {
-                // récupération du praticien
-                Praticien unPraticien = (Praticien)cbxPraticien.SelectedItem;
-
                 // récupération de la spécialité
                 Specialite uneSpecialite = (Specialite)cbxSpe.SelectedItem;
 
@@ -133,11 +137,43 @@ namespace GSB
                 // récupération de la ville (pour le code postal)
                 Ville uneVille = Globale.LesVilles.Find(x => x.Nom == tbxVille.Text);
 
-                Passerelle.modifierPraticien(unPraticien.Id, tbxNom.Text, tbxPrenom.Text, tbxRue.Text, uneVille.Code, uneVille.Nom, tbxTel.Text, tbxEmail.Text, unType.Id, uneSpecialite, out string message);
-                //MessageBox.Show("Praticien modifié");
+                if (Passerelle.modifierPraticien(lePraticien.Id, tbxNom.Text, tbxPrenom.Text, tbxRue.Text, uneVille.Code, uneVille.Nom, tbxTel.Text, tbxEmail.Text, unType.Id, uneSpecialite, out string message) == true)
+                {
+                    MessageBox.Show("Praticien modifié");
+
+                    // Mise a jour de l'interface
+                    afficher();
+                    lePraticien = (Praticien)cbxPraticien.SelectedItem;
+                    remplirPraticien();
+                }
+                else
+                {
+                    MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                };
             }
         }
 
+        private void supprimerPraticien()
+        {
+            buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show("Êtes vous sûr de vouloir supprimer le praticien " + lePraticien.NomPrenom + " ?", "Suppression", buttons);
+            if (result == DialogResult.Yes)
+            {
+                if (Passerelle.supprimerPraticien(lePraticien.Id, out string message) == true)
+                {
+                    MessageBox.Show("Praticien supprimé");
+
+                    // Mise a jour de l'interface
+                    afficher();
+                    lePraticien = (Praticien)cbxPraticien.SelectedItem;
+                    remplirPraticien();
+                }
+                else
+                {
+                    MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                };
+            }
+        }
 
         #endregion
 

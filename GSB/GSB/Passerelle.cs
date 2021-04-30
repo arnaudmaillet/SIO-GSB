@@ -388,7 +388,6 @@ namespace GSB
             cnx.Close();
             //message = string.Empty;
             return true;
-            
         }
 
         static public bool enregistrerBilan(Visite uneVisite, out string message)
@@ -477,22 +476,49 @@ namespace GSB
             try
             {
                 cmd.ExecuteNonQuery();
+                cnx.Close();
+                return true;
             }
             catch (MySqlException e)
             {
                 message = e.Message;
                 //message += e.ToString().Split('\n')[0];
+                cnx.Close();
+                return false;
             }
-            cnx.Close();
-
-            return true;
         }
 
         static public bool supprimerPraticien(int id, out string message)
         {
             message = string.Empty;
-            return false;
-        }
 
+            // Ouverture de la connection a la base
+            cnx.Open();
+
+            // Chargement des objets Motifs
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = cnx,
+                CommandText = "supprimerPraticien",
+                CommandType = CommandType.StoredProcedure
+            };
+
+            // Définition des parametres à transmettre
+            cmd.Parameters.AddWithValue("id", id);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                cnx.Close();
+                return true;
+            }
+            catch (MySqlException e)
+            {
+                message = e.Message;
+                //message += e.ToString().Split('\n')[0];
+                cnx.Close();
+                return false;
+            }
+        }
     }
 }
