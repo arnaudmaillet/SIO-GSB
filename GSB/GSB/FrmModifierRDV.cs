@@ -25,7 +25,7 @@ namespace GSB
         // Au chargement du formulaire
         private void FrmModifierRDV_Load(object sender, EventArgs e)
         {
-            parametrerComposant();
+            parametrerComposant(); 
             remplirdgvRDV();
             afficher();
         }

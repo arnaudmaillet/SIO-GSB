@@ -37,7 +37,7 @@ namespace GSB
         private void cbxPraticien_SelectedIndexChanged(object sender, EventArgs e)
         {
             lePraticien = (Praticien)cbxPraticien.SelectedItem;
-            remplirPraticien();
+            if (lePraticien != null) remplirPraticien();
         }
 
         private void btnSupprimer_Click(object sender, EventArgs e)
@@ -71,6 +71,8 @@ namespace GSB
 
         private void afficher()
         {
+            cbxPraticien.DataSource = null;
+
             // alimentation de la zone de liste déroulante contenant les praticiens
             cbxPraticien.DataSource = Globale.LeVisiteur.getLesPraticiens();
             cbxPraticien.DisplayMember = "libelle";
@@ -164,8 +166,10 @@ namespace GSB
                     MessageBox.Show("Praticien supprimé");
 
                     // Mise a jour de l'interface
+                    Globale.LeVisiteur.supprimerPraticien(lePraticien);
                     afficher();
-                    lePraticien = (Praticien)cbxPraticien.SelectedItem;
+                    cbxPraticien.SelectedIndex = 0;
+                    lePraticien = Globale.LeVisiteur.getLesPraticiens()[0];
                     remplirPraticien();
                 }
                 else
@@ -176,7 +180,6 @@ namespace GSB
         }
 
         #endregion
-
 
     }
 }
