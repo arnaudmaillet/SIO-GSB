@@ -37,7 +37,7 @@ delimiter $$
 create procedure modifierRendezVous (id int, dateEtHeure datetime)
 begin
 	update visite
-	set dateEtHeure = uneDateEtHeure
+	set visite.dateEtHeure = dateEtHeure
 	where visite.id = id;
 end
 $$
@@ -47,8 +47,9 @@ $$
 
 drop procedure if exists supprimerRendezVous;
 delimiter $$
-create procedure supprimerRendezVous 
-		
+create procedure supprimerRendezVous (id int)
+	delete from visite
+    where visite.id = id;
 $$
 
 

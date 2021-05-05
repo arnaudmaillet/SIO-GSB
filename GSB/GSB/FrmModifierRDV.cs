@@ -15,6 +15,7 @@ namespace GSB
 {
     public partial class FrmModifierRDV : FrmBase
     {
+        private MessageBoxButtons buttons;
         public FrmModifierRDV()
         {
             InitializeComponent();
@@ -41,6 +42,36 @@ namespace GSB
         {
             afficher();
         }
+
+        private void dgvRDV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 6)
+            {
+                Visite unRDV = (Visite)dgvRDV[0, e.RowIndex].Value;
+
+                buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show("Êtes vous sûr de vouloir supprimer le rendez-vous de " + unRDV.LePraticien.NomPrenom + " programmé le " + unRDV.DateEtHeure.ToLongDateString() +" ?", "Suppression", buttons);
+                if (result == DialogResult.Yes)
+                {
+                    // Suppression de la visite dans la base de donnée
+                    if (Passerelle.supprimerRendezVous(unRDV.Id, out string message) == false)
+                    {
+                        MessageBox.Show(message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        // Suppression de la ligne
+                        dgvRDV.Rows.RemoveAt(e.RowIndex);
+
+                        // Suppression de la visite dans la collection lesVisites
+                        Globale.LeVisiteur.supprimerVisite(unRDV);
+
+                        MessageBox.Show("Rendez-vous supprimé");
+                    };
+                }
+            }
+        }
+
         #endregion
 
         #region méthodes
@@ -296,6 +327,7 @@ namespace GSB
 
             
         }
+
     }
     #endregion
 }

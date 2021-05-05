@@ -49,7 +49,7 @@ namespace GSB
             this.dgvEchantillons.Name = "dgvEchantillons";
             this.dgvEchantillons.RowHeadersWidth = 51;
             this.dgvEchantillons.RowTemplate.Height = 24;
-            this.dgvEchantillons.Size = new System.Drawing.Size(1328, 547);
+            this.dgvEchantillons.Size = new System.Drawing.Size(701, 547);
             this.dgvEchantillons.TabIndex = 13;
             // 
             // panel2

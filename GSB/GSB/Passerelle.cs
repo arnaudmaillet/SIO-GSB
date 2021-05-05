@@ -347,10 +347,36 @@ namespace GSB
             return idVisite;
         }
 
-        static public bool supprimerRendezVous(int idVisite, out string message)
+        static public bool supprimerRendezVous(int id, out string message)
         {
             message = string.Empty;
-            return false;
+
+            // Ouverture de la connection a la base
+            cnx.Open();
+
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = cnx,
+                CommandText = "supprimerRendezVous",
+                CommandType = CommandType.StoredProcedure
+            };
+            // Définition des parametres à transmettre
+            cmd.Parameters.AddWithValue("id", id);
+
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                cnx.Close();
+                return true;
+            }
+            catch (MySqlException e)
+            {
+                message = e.Message;
+                //message += e.ToString().Split('\n')[0];
+                cnx.Close();
+                return false;
+            }
         }
 
         static public bool modifierRendezVous(int id, DateTime dateEtHeure, out string message)
@@ -360,7 +386,7 @@ namespace GSB
             // Ouverture de la connection a la base
             cnx.Open();
 
-            // Chargement des objets Motifs
+
             MySqlCommand cmd = new MySqlCommand()
             {
                 Connection = cnx,
@@ -401,7 +427,6 @@ namespace GSB
             // Ouverture de la connection a la base
             cnx.Open();
 
-            // Chargement des objets Motifs
             MySqlCommand cmd = new MySqlCommand()
             {
                 Connection = cnx,
@@ -442,7 +467,7 @@ namespace GSB
             // Ouverture de la connection a la base
             cnx.Open();
 
-            // Chargement des objets Motifs
+
             MySqlCommand cmd = new MySqlCommand()
             {
                 Connection = cnx,
@@ -492,7 +517,6 @@ namespace GSB
             // Ouverture de la connection a la base
             cnx.Open();
 
-            // Chargement des objets Motifs
             MySqlCommand cmd = new MySqlCommand()
             {
                 Connection = cnx,

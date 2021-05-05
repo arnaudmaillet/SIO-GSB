@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvRDV = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblDgvTitre = new System.Windows.Forms.Label();
-            this.dgvRDV = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnModifier = new System.Windows.Forms.Button();
             this.lblAffichage = new System.Windows.Forms.Label();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRDV)).BeginInit();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,22 +54,36 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoSize = true;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.dgvRDV);
+            this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(0, 108);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(937, 581);
+            this.panel2.Size = new System.Drawing.Size(1018, 584);
             this.panel2.TabIndex = 13;
+            // 
+            // dgvRDV
+            // 
+            this.dgvRDV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvRDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRDV.Location = new System.Drawing.Point(-1, 68);
+            this.dgvRDV.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvRDV.Name = "dgvRDV";
+            this.dgvRDV.RowHeadersWidth = 51;
+            this.dgvRDV.Size = new System.Drawing.Size(1017, 510);
+            this.dgvRDV.TabIndex = 0;
+            this.dgvRDV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRDV_CellClick);
+            this.dgvRDV.SelectionChanged += new System.EventHandler(this.dgvrRDV_SelectionChanged);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.lblDgvTitre);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(935, 71);
+            this.panel4.Size = new System.Drawing.Size(1016, 71);
             this.panel4.TabIndex = 2;
             // 
             // lblDgvTitre
@@ -83,30 +97,20 @@
             this.lblDgvTitre.TabIndex = 1;
             this.lblDgvTitre.Text = "label1";
             // 
-            // dgvRDV
-            // 
-            this.dgvRDV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvRDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRDV.Location = new System.Drawing.Point(3, 79);
-            this.dgvRDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvRDV.Name = "dgvRDV";
-            this.dgvRDV.RowHeadersWidth = 51;
-            this.dgvRDV.Size = new System.Drawing.Size(932, 496);
-            this.dgvRDV.TabIndex = 0;
-            this.dgvRDV.SelectionChanged += new System.EventHandler(this.dgvrRDV_SelectionChanged);
-            // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.AutoSize = true;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.btnModifier);
             this.panel3.Controls.Add(this.lblAffichage);
             this.panel3.Controls.Add(this.dtpDate);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(942, 107);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Location = new System.Drawing.Point(1018, 107);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(571, 584);
+            this.panel3.Size = new System.Drawing.Size(495, 584);
             this.panel3.TabIndex = 14;
             // 
             // btnModifier
@@ -114,7 +118,7 @@
             this.btnModifier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnModifier.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModifier.Location = new System.Drawing.Point(48, 165);
-            this.btnModifier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(4);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(195, 62);
             this.btnModifier.TabIndex = 2;
@@ -137,7 +141,7 @@
             // 
             this.dtpDate.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDate.Location = new System.Drawing.Point(48, 91);
-            this.dtpDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(347, 30);
             this.dtpDate.TabIndex = 0;
@@ -157,9 +161,9 @@
             this.Controls.SetChildIndex(this.panel2, 0);
             this.Controls.SetChildIndex(this.panel3, 0);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRDV)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRDV)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);

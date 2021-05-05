@@ -50,7 +50,6 @@
             // 
             // lblTitre
             // 
-            this.lblTitre.Location = new System.Drawing.Point(0, 21);
             this.lblTitre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitre.Size = new System.Drawing.Size(1699, 60);
             // 
@@ -70,10 +69,10 @@
             this.zoneSaisie.Controls.Add(this.label5);
             this.zoneSaisie.Controls.Add(this.dgvVisites);
             this.zoneSaisie.Dock = System.Windows.Forms.DockStyle.Left;
-            this.zoneSaisie.Location = new System.Drawing.Point(0, 71);
-            this.zoneSaisie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zoneSaisie.Location = new System.Drawing.Point(0, 88);
+            this.zoneSaisie.Margin = new System.Windows.Forms.Padding(4);
             this.zoneSaisie.Name = "zoneSaisie";
-            this.zoneSaisie.Size = new System.Drawing.Size(655, 705);
+            this.zoneSaisie.Size = new System.Drawing.Size(786, 843);
             this.zoneSaisie.TabIndex = 21;
             // 
             // label5
@@ -103,10 +102,10 @@
             // 
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(546, 71);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(786, 88);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(436, 705);
+            this.panel4.Size = new System.Drawing.Size(909, 843);
             this.panel4.TabIndex = 22;
             // 
             // panel3
@@ -121,7 +120,7 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.dtpDate);
             this.panel3.Location = new System.Drawing.Point(24, 53);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(506, 381);
             this.panel3.TabIndex = 14;
@@ -133,7 +132,7 @@
             this.cbxPraticien.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxPraticien.FormattingEnabled = true;
             this.cbxPraticien.Location = new System.Drawing.Point(169, 82);
-            this.cbxPraticien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxPraticien.Margin = new System.Windows.Forms.Padding(4);
             this.cbxPraticien.Name = "cbxPraticien";
             this.cbxPraticien.Size = new System.Drawing.Size(327, 32);
             this.cbxPraticien.TabIndex = 0;
@@ -154,7 +153,7 @@
             this.cbxMotif.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxMotif.FormattingEnabled = true;
             this.cbxMotif.Location = new System.Drawing.Point(169, 150);
-            this.cbxMotif.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxMotif.Margin = new System.Windows.Forms.Padding(4);
             this.cbxMotif.Name = "cbxMotif";
             this.cbxMotif.Size = new System.Drawing.Size(327, 32);
             this.cbxMotif.TabIndex = 1;
